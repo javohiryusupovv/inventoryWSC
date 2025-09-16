@@ -33,7 +33,7 @@ export default function CTA() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className="flex items-center space-x-2 text-lg px-8 py-6 bg-transparent group"
+                                    className="flex items-center space-x-2 text-lg px-8 py-6 bg-transparent group hover:bg-[#aa60fa] transition-all duration-200 hover:text-white"
                                 >
                                     <MessageCircle className="w-5 h-5" />
                                     <span>Telegram</span>
@@ -44,15 +44,15 @@ export default function CTA() {
                             {/* Trust Indicators */}
                             <div className="grid md:grid-cols-3 gap-8 pt-8 border-t border-border">
                                 <div className="text-center">
-                                    <div className="text-2xl font-bold text-accent mb-1">1 час</div>
+                                    <div className="text-2xl font-bold text-[#aa60fa] mb-1">1 час</div>
                                     <p className="text-sm text-muted-foreground">Время ответа</p>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-2xl font-bold text-accent mb-1">Бесплатно</div>
+                                    <div className="text-2xl font-bold text-[#aa60fa] mb-1">Бесплатно</div>
                                     <p className="text-sm text-muted-foreground">Консультация</p>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-2xl font-bold text-accent mb-1">100%</div>
+                                    <div className="text-2xl font-bold text-[#aa60fa] mb-1">100%</div>
                                     <p className="text-sm text-muted-foreground">Конфиденциальность</p>
                                 </div>
                             </div>

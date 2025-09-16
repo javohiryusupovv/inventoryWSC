@@ -4,7 +4,7 @@ import { Card, CardContent } from "../ui/card";
 
 export default function HomeSection() {
     return (
-        <section className="bg-gradient-to-br from-background to-muted py-20 lg:py-32">
+        <section className="pb-20 pt-[120px] lg:py-32">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column - Content */}
@@ -44,7 +44,7 @@ export default function HomeSection() {
                         <Card className="overflow-hidden">
                             <CardContent className="p-0">
                                 <img
-                                    src="/modern-warehouse-with-organized-shelves-and-invent.jpg"
+                                    src="https://media.istockphoto.com/id/1138429558/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%8F%D0%B4%D1%8B-%D0%BF%D0%BE%D0%BB%D0%BE%D0%BA.jpg?s=612x612&w=0&k=20&c=zkhxc5hIJLIQiWaJX_RxaiKlKuanYzSjlqFuUt6fKtA="
                                     alt="Professional warehouse inventory management"
                                     className="w-full h-[400px] lg:h-[500px] object-cover"
                                     loading="eager"

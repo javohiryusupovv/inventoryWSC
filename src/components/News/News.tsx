@@ -1,13 +1,14 @@
-import { Calendar, User, ArrowRight} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Calendar, User, ArrowRight, Badge } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 import { newsData } from "../../../constants/page";
 
 
-
-export default function News() {
+export default function NewsHome() {
     const news = newsData;
   return (
-    <section className="py-20 pt-32 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
@@ -20,7 +21,7 @@ export default function News() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {news.map((item) => (
+          {news.slice(0, 3).map((item) => (
             <div
               key={item.id}
               className="bg-white rounded-lg shadow p-4 group cursor-pointer"
@@ -68,6 +69,20 @@ export default function News() {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* View All News Button */}
+        <div className="text-center">
+          <Link href={`/news`}>
+            <Button
+              size="lg"
+              variant="outline"
+              className="group bg-transparent hover:bg-[#aa60fa] hover:text-white transition-all duration-200"
+            >
+              Yangiliklar
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

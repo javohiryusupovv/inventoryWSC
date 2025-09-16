@@ -49,13 +49,13 @@ export default function WorkFlow() {
                                 <div key={index} className="relative">
                                     {/* Step Circle */}
                                     <div className="relative z-10 w-16 h-16 bg-[#aa60fa] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                                        <span className="text-accent-foreground font-bold text-lg">{index + 1}</span>
+                                        <span className="text-white font-bold text-lg">{index + 1}</span>
                                     </div>
 
                                     {/* Step Card */}
                                     <Card className="text-center group hover:shadow-lg transition-all duration-300">
-                                        <CardContent className="p-6">
-                                            <h3 className="font-semibold text-foreground mb-2 text-balance">{step.step}</h3>
+                                        <CardContent className="py-6 px-3">
+                                            <h3 className="font-semibold text-foreground mb-2 text-balance">{step.title}</h3>
                                             <div className="w-8 h-8 bg-[#aa60fa]/10 rounded-full flex items-center justify-center mx-auto group-hover:bg-[#aa60fa]/20 transition-colors">
                                                 <CheckCircle className="w-4 h-4 text-[#aa60fa]" />
                                             </div>
@@ -64,7 +64,7 @@ export default function WorkFlow() {
 
                                     {/* Arrow (except for last item) */}
                                     {index < steps.length - 1 && (
-                                        <div className="absolute top-8 -right-2 z-20">
+                                        <div className="absolute top-5 -right-2 z-20">
                                             <ArrowRight className="w-4 h-4 text-[#aa60fa]" />
                                         </div>
                                     )}
@@ -77,17 +77,17 @@ export default function WorkFlow() {
                 {/* Mobile Vertical Timeline */}
                 <div className="lg:hidden space-y-6">
                     {steps.map((step, index) => (
-                        <div key={index} className="flex items-start space-x-4">
+                        <div key={index} className="flex items-center space-x-4">
                             {/* Step Number */}
                             <div className="w-12 h-12 bg-[#aa60fa] rounded-full flex items-center justify-center flex-shrink-0">
-                                <span className="text-accent-foreground font-bold">{index + 1}</span>
+                                <span className="text-white font-bold">{index + 1}</span>
                             </div>
 
                             {/* Step Content */}
                             <Card className="flex-1 group hover:shadow-lg transition-all duration-300">
                                 <CardContent className="p-4">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="font-semibold text-foreground text-balance">{step.step}</h3>
+                                        <h3 className="font-semibold text-foreground text-balance">{step.title}</h3>
                                         <CheckCircle className="w-5 h-5 text-[#aa60fa] flex-shrink-0" />
                                     </div>
                                 </CardContent>
