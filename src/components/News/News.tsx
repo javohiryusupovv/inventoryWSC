@@ -61,12 +61,12 @@ export default function NewsHome() {
                   </span>
                 ))}
               </div>
-              <a
+              <Link
                 href={`/news/${item.slug}`}
                 className="text-purple-600 flex items-center gap-1 font-medium"
               >
                 Читать <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
