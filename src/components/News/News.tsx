@@ -55,7 +55,7 @@ export default function NewsHome() {
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-gray-300 text-gray-700 px-2 py-1 text-xs rounded"
+                    className="bg-[#aa60fa]/70 group-hover:bg-[#aa60fa] transition-all duration-200 text-white px-2 py-1 text-xs rounded"
                   >
                     {tag}
                   </span>
