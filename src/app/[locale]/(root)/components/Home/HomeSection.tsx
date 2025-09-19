@@ -3,8 +3,10 @@ import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import ModalAriza from "./_components/ModalAriza";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HomeSection() {
+    const t = useTranslations("HomePage");
     return (
         <section className="pb-20 pt-[120px] lg:py-32">
             <div className="container mx-auto px-4">
@@ -13,14 +15,14 @@ export default function HomeSection() {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight text-balance">
-                                Инвентаризация и аудит складов по всему Узбекистану
+                                {t("title")}
                             </h1>
-                            <p className="text-xl text-muted-foreground leading-relaxed text-pretty">Точная проверка, низкие цены, гарантия результата и поддержка</p>
+                            <p className="text-xl text-muted-foreground leading-relaxed text-pretty">{t("subtitle")}</p>
                         </div>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <ModalAriza/>
+                            <ModalAriza />
                             <Link href={"https://t.me/Javoxir_iq"} target="_blank">
                                 <Button
                                     variant="outline"
@@ -28,16 +30,16 @@ export default function HomeSection() {
                                     className="flex items-center !bg-[#aa60fa] text-white hover:!bg-[#aa60fa]/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
                                 >
                                     <MessageCircle className="w-5 h-5" />
-                                    <span>Aloqa Telegram</span>
+                                    <span>{t("telegram")}</span>
                                 </Button>
-                        
+
                             </Link>
                         </div>
 
                         {/* Microtext */}
                         <p className="text-sm text-muted-foreground flex items-center space-x-2">
                             <CheckCircle className="w-4 h-4 text-green-500" />
-                            <span>Ответим в течение 1 часа в рабочее время</span>
+                            <span>{t("responseTime")}</span>
                         </p>
                     </div>
 

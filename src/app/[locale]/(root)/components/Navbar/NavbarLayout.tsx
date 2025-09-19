@@ -2,10 +2,8 @@
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import MenyuLanguage from "./_components/MenyuLanguage";
-import { useTranslations } from "next-intl";
 
 export default function NavbarLayout() {
-  const t = useTranslations("NavbarLang");
 
   return (
     <div>
@@ -54,17 +52,17 @@ export default function NavbarLayout() {
                   className="flex items-center space-x-1 hover:text-foreground transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>{t("title")}</span>
+                  <span>+998 (90) 070 02 51</span>
                 </a>
                 <a
                   href="mailto:info@inventory.uz"
                   className="flex items-center space-x-1 hover:text-foreground transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>{t("text")}</span>
+                  <span>info@inventory.uz</span>
                 </a>
               </div>
-            <MenyuLanguage/>
+              <MenyuLanguage />
             </div>
           </div>
         </div>

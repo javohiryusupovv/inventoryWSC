@@ -1,3 +1,6 @@
+"use client"
+
+import { useTranslations } from "next-intl"
 import { Card, CardContent } from "../ui/card"
 import { Shield, Zap, DollarSign, HeartHandshake } from "lucide-react"
 
@@ -8,32 +11,34 @@ const iconMap = {
     3: HeartHandshake,
 }
 
-const uspItems = [
-    {
-        title: "Лицензия и 10+ лет опыта",
-        description: "работаем официально, соблюдаем стандарты",
-    },
-    {
-        title: "Точность и скорость",
-        description: "инвентаризация любой сложности без остановки бизнеса",
-    },
-    {
-        title: "Цена ниже рынка",
-        description: "прозрачная смета без скрытых затрат",
-    },
-    {
-        title: "Гарантия и пост-поддержка",
-        description: "остаёмся на связи и исправляем недочёты",
-    },
-]
-
 
 export default function SecondPage() {
+    const t = useTranslations("HomePage")
+
+    const uspItems = [
+        {
+            title: t("license"),
+            description: t("licenseDesc"),
+        },
+        {
+            title: t("accuracy"),
+            description: t("accuracyDesc"),
+        },
+        {
+            title: t("price"),
+            description: t("priceDesc"),
+        },
+        {
+            title: t("guarantee"),
+            description: t("guaranteeDesc"),
+        },
+    ]
+
     return (
         <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">Почему выбирают нас</h2>
+                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">{t("whyChooseUs")}</h2>
                     <div className="w-24 h-1 bg-[#aa60fa] mx-auto"></div>
                 </div>
 
