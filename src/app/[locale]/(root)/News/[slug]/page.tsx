@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
-import { newsData } from "../../../../constants/page"
+import { newsData } from "../../../../../../constants/page"
 
 type ArticlePageParams = { params: Promise<{ slug: string }> }
 
