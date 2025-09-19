@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, User, ArrowRight, Badge } from "lucide-react";
+import { Calendar, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { newsData } from "../../../constants/page";
