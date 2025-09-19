@@ -55,18 +55,18 @@ export default function NewsHome() {
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-gray-300 text-gray-700 px-2 py-1 text-xs rounded"
+                    className="bg-[#aa60fa]/70 group-hover:bg-[#aa60fa] transition-all duration-200 text-white px-2 py-1 text-xs rounded"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <a
+              <Link
                 href={`/news/${item.slug}`}
                 className="text-purple-600 flex items-center gap-1 font-medium"
               >
                 Читать <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -77,7 +77,7 @@ export default function NewsHome() {
             <Button
               size="lg"
               variant="outline"
-              className="group bg-transparent hover:bg-[#aa60fa] hover:text-white transition-all duration-200"
+              className="group bg-transparent hover:bg-[#aa60fa] border-[#aa60fa] text-[#aa60fa] hover:text-white transition-all duration-200"
             >
               Yangiliklar
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

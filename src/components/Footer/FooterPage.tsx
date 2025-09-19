@@ -1,6 +1,8 @@
 
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import Logo from "../../../public/icons/logo.svg"
+import Image from "next/image"
 
 
 export default function FooterPage() {
@@ -10,12 +12,7 @@ export default function FooterPage() {
                 <div className="grid md:grid-cols-4 gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <div className="flex items-center space-x-2">
-                            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                                <span className="text-primary-foreground font-bold text-sm">IU</span>
-                            </div>
-                            <span className="font-bold text-lg">Inventory Uzbekistan</span>
-                        </div>
+                        <Image src={Logo} alt="Logo Inventory.uz"  className="w-[200px]"/>
                         <p className="text-sm text-muted-foreground leading-relaxed">
                             Профессиональная инвентаризация и аудит складов по всему Узбекистану
                         </p>
@@ -93,7 +90,7 @@ export default function FooterPage() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p className="text-sm text-muted-foreground">© 2024 Inventory Uzbekistan. Все права защищены.</p>
+                    <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Inventory Uzbekistan. Все права защищены.</p>
                     <div className="flex space-x-6">
                         <Link
                             href={`/privacy`}

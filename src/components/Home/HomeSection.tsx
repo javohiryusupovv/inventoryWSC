@@ -1,6 +1,7 @@
 import { CheckCircle, MessageCircle, Phone } from "lucide-react";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
+import ModalAriza from "./_components/ModalAriza";
 
 export default function HomeSection() {
     return (
@@ -18,14 +19,11 @@ export default function HomeSection() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button size="lg" className="flex items-center space-x-2 text-lg px-8 py-6" >
-                                <Phone className="w-5 h-5" />
-                                <span>Заказать звонок</span>
-                            </Button>
+                            <ModalAriza/>
                             <Button
                                 variant="outline"
                                 size="lg"
-                                className="flex items-center space-x-2 text-lg px-8 py-6 bg-transparent"
+                                className="flex items-center !bg-[#aa60fa] text-white hover:!bg-[#aa60fa]/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
                             >
                                 <MessageCircle className="w-5 h-5" />
                                 <span>Aloqa Telegram</span>

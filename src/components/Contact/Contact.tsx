@@ -70,7 +70,7 @@ export default function Contact() {
                       г. Ташкент, ул. Амира Темура, 123
                     </p>
                     <p className="text-muted-foreground">
-                      Бизнес-центр "Инвентори", 5 этаж
+                      Бизнес-центр &quot;Инвентори&quot;, 5 этаж
                     </p>
                   </div>
                 </div>

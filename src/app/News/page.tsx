@@ -1,11 +1,10 @@
-import { Calendar, User, ArrowRight} from "lucide-react";
+import { Calendar, User, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { newsData } from "../../../constants/page";
-
-
+import Link from "next/link";
 
 export default function News() {
-    const news = newsData;
+  const news = newsData;
   return (
     <section className="py-20 pt-32 bg-background">
       <div className="container mx-auto px-4">
@@ -54,18 +53,18 @@ export default function News() {
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-gray-300 text-gray-700 px-2 py-1 text-xs rounded"
+                    className="bg-[#aa60fa] text-white px-2 py-1 text-xs rounded"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <a
+              <Link
                 href={`/news/${item.slug}`}
                 className="text-purple-600 flex items-center gap-1 font-medium"
               >
                 Читать <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
