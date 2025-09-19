@@ -1,6 +1,95 @@
 {
-  "NavbarLang": {
-    "title": "Language",
-    "text": "text zjkcscjsd"
+  "HomePage": {
+    "title": "Inventory and warehouse audit across Uzbekistan",
+    "subtitle": "Accurate inspection, low prices, guaranteed results and support",
+    "callButton": "Request a call",
+    "telegram": "Contact via Telegram",
+    "responseTime": "We will respond within 1 hour during working hours",
+    "whyChooseUs": "Why choose us",
+    "license": "License and 10+ years of experience",
+    "licenseDesc": "We work officially, following standards",
+    "accuracy": "Accuracy and speed",
+    "accuracyDesc": "Inventory of any complexity without stopping your business",
+    "price": "Lower than market price",
+    "priceDesc": "Transparent estimate with no hidden costs",
+    "guarantee": "Guarantee and post-support",
+    "guaranteeDesc": "We stay in touch and fix shortcomings",
+    "ourServices": "Our Services",
+    "ourServicesDesc": "Comprehensive solutions for effective warehouse management",
+    "services": {
+      "inventory": {
+        "title": "Warehouse inventory",
+        "desc": "Physical verification of stock, identification of shortages/excesses, reconciliation with records, reporting and recommendations."
+      },
+      "audit": {
+        "title": "Warehouse process audit",
+        "desc": "Diagnostics of receiving, storage, picking, shipping; loss detection; improvement plan with KPIs."
+      },
+      "optimization": {
+        "title": "Optimization and implementation",
+        "desc": "Zone redesign, address storage, routes, picking rules; reducing time and errors."
+      },
+      "training": {
+        "title": "Training and support",
+        "desc": "Instructions, staff training, performance monitoring, support after project completion."
+      },
+      "wms": {
+        "title": "WMS - Warehouse Management System",
+        "desc": "Implementation and configuration of WMS systems for warehouse automation, inventory control and logistics optimization."
+      },
+      "erp": {
+        "title": "ERP - Enterprise Resource Planning",
+        "desc": "Integration of warehouse processes with ERP systems, configuration of inventory management modules and data synchronization."
+      },
+      "more": "Learn more"
+    },
+    "stats": {
+      "support": {
+        "value": "24/7",
+        "label": "Customer support"
+      },
+      "accuracy": {
+        "value": "99.9%",
+        "label": "Inventory accuracy"
+      },
+      "time": {
+        "value": "48h",
+        "label": "Average completion time"
+      }
+    },
+    "howWeWork": "How we work",
+    "howWeWorkDesc": "Proven methodology ensuring maximum efficiency",
+    "processSteps": {
+      "stepone": {
+        "title": "Diagnostics and briefing"
+      },
+      "steptwo": {
+        "title": "Plan and estimate"
+      },
+      "stepthree": {
+        "title": "Inventory / audit"
+      },
+      "stepfour": {
+        "title": "Final report and recommendations"
+      },
+      "stepfive": {
+        "title": "Support and improvement control"
+      }
+    },
+    "principles": {
+      "approachAdvantages": "Advantages of our approach",
+      "transparency": {
+        "title": "Transparency",
+        "desc": "Full reporting at every stage of work"
+      },
+      "quality": {
+        "title": "Quality",
+        "desc": "Strict quality control at all stages"
+      },
+      "result": {
+        "title": "Result",
+        "desc": "Guaranteed achievement of set goals"
+      }
+    }
   }
 }

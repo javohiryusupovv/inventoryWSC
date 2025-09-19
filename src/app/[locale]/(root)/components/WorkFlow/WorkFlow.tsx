@@ -1,40 +1,42 @@
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
-
-
-const steps = [
-  {
-    step: 1,
-    title: "Диагностика и бриф",
-  },
-  {
-    step: 2,
-    title: "План и смета",
-  },
-  {
-    step: 3,
-    title: "Инвентаризация/аудит",
-  },
-  {
-    step: 4,
-    title: "Итоговый отчёт и рекомендации",
-  },
-  {
-    step: 5,
-    title: "Поддержка и контроль улучшений",
-  },
-]
-
+import { useTranslations } from "next-intl";
 
 
 export default function WorkFlow() {
+    const t = useTranslations("HomePage")
+    const p = useTranslations("HomePage.processSteps")
+    const s = useTranslations("HomePage.principles")
+
+    const steps = [
+        {
+            step: 1,
+            title: p("stepone.title"),
+        },
+        {
+            step: 2,
+            title: p("steptwo.title"),
+        },
+        {
+            step: 3,
+            title: p("stepthree.title"),
+        },
+        {
+            step: 4,
+            title: p("stepfour.title"),
+        },
+        {
+            step: 5,
+            title: p("stepfive.title"),
+        },
+    ]
     return (
         <section id="workflow" className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">Как мы работаем</h2>
+                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">{t("howWeWork")}</h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-                        Проверенная методология работы, обеспечивающая максимальную эффективность
+                        {t("howWeWorkDesc")}
                     </p>
                 </div>
 
@@ -98,28 +100,28 @@ export default function WorkFlow() {
 
                 {/* Process Benefits */}
                 <div className="mt-16 bg-muted/50 rounded-2xl p-8">
-                    <h3 className="text-2xl font-bold text-foreground text-center mb-8">Преимущества нашего подхода</h3>
+                    <h3 className="text-2xl font-bold text-foreground text-center mb-8">{s("approachAdvantages")}</h3>
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="text-center">
                             <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                                 <CheckCircle className="w-6 h-6 text-[#aa60fa]" />
                             </div>
-                            <h4 className="font-semibold text-foreground mb-2">Прозрачность</h4>
-                            <p className="text-sm text-muted-foreground">Полная отчетность на каждом этапе работы</p>
+                            <h4 className="font-semibold text-foreground mb-2">{s("transparency.title")}</h4>
+                            <p className="text-sm text-muted-foreground">{s("transparency.desc")}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                                 <CheckCircle className="w-6 h-6 text-[#aa60fa]" />
                             </div>
-                            <h4 className="font-semibold text-foreground mb-2">Качество</h4>
-                            <p className="text-sm text-muted-foreground">Строгий контроль качества на всех этапах</p>
+                            <h4 className="font-semibold text-foreground mb-2">{s("quality.title")}</h4>
+                            <p className="text-sm text-muted-foreground">{s("quality.desc")}</p>
                         </div>
                         <div className="text-center">
                             <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                                 <CheckCircle className="w-6 h-6 text-[#aa60fa]" />
                             </div>
-                            <h4 className="font-semibold text-foreground mb-2">Результат</h4>
-                            <p className="text-sm text-muted-foreground">Гарантированное достижение поставленных целей</p>
+                            <h4 className="font-semibold text-foreground mb-2">{s("result.title")}</h4>
+                            <p className="text-sm text-muted-foreground">{s("result.desc")}</p>
                         </div>
                     </div>
                 </div>

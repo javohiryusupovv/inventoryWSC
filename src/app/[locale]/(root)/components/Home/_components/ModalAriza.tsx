@@ -17,6 +17,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { CheckCircle, MessagesSquare } from "lucide-react";
 import { sendToTelegram } from "@/actions/sendToTelegram";
+import { useTranslations } from "next-intl";
 
 // ✅ Validatsiya sxemasi
 const schema = z.object({
@@ -37,6 +38,7 @@ type FormType = z.infer<typeof schema>;
 export default function ModalAriza() {
   const [open, setOpen] = useState(false);
   const [success, setSuccess] = useState(false);
+  const t = useTranslations("HomePage");
 
   const {
     register,
@@ -78,7 +80,7 @@ export default function ModalAriza() {
           className="flex w-full justify-center text-[#aa60fa] border-[#aa60fa] hover:bg-[#aa60fa] transition-all duration-200 hover:text-white items-center space-x-2 text-lg px-8 py-[10px] rounded-[6px] border"
         >
           <MessagesSquare className="w-5 h-5" />
-          <span>Заказать звонок</span>
+          <span>{t("callButton")}</span>
         </DialogTrigger>
 
         <DialogContent>

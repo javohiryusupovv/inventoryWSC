@@ -1,6 +1,95 @@
 {
-  "NavbarLang": {
-    "title": "Til",
-    "text": "Text"
+  "HomePage": {
+    "title": "Inventarizatsiya va omborlarni audit qilish butun O'zbekiston bo'ylab",
+    "subtitle": "Aniq tekshiruv, arzon narxlar, natija kafolati va qo'llab-quvvatlash",
+    "callButton": "Qo'ng'iroq buyurtma qilish",
+    "telegram": "Aloqa Telegram",
+    "responseTime": "Ish vaqtida 1 soat ichida javob beramiz",
+    "whyChooseUs": "Nega bizni tanlashadi",
+    "license": "Litsenziya va 10+ yil tajriba",
+    "licenseDesc": "Rasmiy ishlaymiz, standartlarga rioya qilamiz",
+    "accuracy": "Aniqlik va tezlik",
+    "accuracyDesc": "Har qanday murakkab inventarizatsiya biznesni to'xtatmasdan",
+    "price": "Bozordan past narx",
+    "priceDesc": "Ochiq smeta, yashirin xarajatlarsiz",
+    "guarantee": "Kafolat va keyingi qo'llab-quvvatlash",
+    "guaranteeDesc": "Aloqada qolamiz va kamchiliklarni tuzatamiz",
+    "ourServices": "Bizning xizmatlarimiz",
+    "ourServicesDesc": "Omborxona operatsiyalarini samarali boshqarish uchun kompleks yechimlar",
+    "services": {
+      "inventory": {
+        "title": "Omborlarni inventarizatsiya qilish",
+        "desc": "Qoldiqlarni amalda tekshirish, kamomad/ortiqchalarni aniqlash, hisob-kitob bilan taqqoslash, hisobot rasmiylashtirish va tavsiyalar."
+      },
+      "audit": {
+        "title": "Ombor jarayonlarini audit qilish",
+        "desc": "Qabul qilish, saqlash, yig'ish, jo'natishni diagnostika qilish; yo'qotishlarni topish; KPI bilan takomillashtirish rejasi."
+      },
+      "optimization": {
+        "title": "Optimallashtirish va joriy etish",
+        "desc": "Zonalarni qayta rejalashtirish, manzilli saqlash, yo'nalishlar, yig'ish qoidalari; vaqt va xatolarni kamaytirish."
+      },
+      "training": {
+        "title": "O'qitish va hamrohlik qilish",
+        "desc": "Yo'riqnomalar, xodimlarni o'qitish, ko'rsatkichlarni nazorat qilish, loyiha topshirilgandan keyin ham qo'llab-quvvatlash."
+      },
+      "wms": {
+        "title": "WMS - Ombor boshqaruv tizimi",
+        "desc": "Ombor operatsiyalarini avtomatlashtirish, zaxiralarni nazorat qilish va logistika jarayonlarini optimallashtirish uchun WMS tizimlarini joriy qilish va sozlash."
+      },
+      "erp": {
+        "title": "ERP - Korxona resurslarini rejalashtirish",
+        "desc": "Ombor jarayonlarini ERP tizimlari bilan integratsiya qilish, zaxiralarni boshqarish modullarini sozlash va ma'lumotlarni sinxronlashtirish."
+      },
+      "more": "Batafsil"
+    },
+    "stats": {
+      "support": {
+        "value": "24/7",
+        "label": "Mijozlarni qo‘llab-quvvatlash"
+      },
+      "accuracy": {
+        "value": "99.9%",
+        "label": "Inventarizatsiya aniqligi"
+      },
+      "time": {
+        "value": "48 soat",
+        "label": "O‘rtacha bajarilish vaqti"
+      }
+    },
+    "howWeWork": "Biz qanday ishlaymiz",
+    "howWeWorkDesc": "Maksimal samaradorlikni ta'minlaydigan sinovdan o'tgan ish metodologiyasi",
+    "processSteps": {
+      "stepone": {
+        "title": "Diagnostika va briefing"
+      },
+      "steptwo": {
+        "title": "Reja va smeta"
+      },
+      "stepthree": {
+        "title": "Inventarizatsiya / audit"
+      },
+      "stepfour": {
+        "title": "Yakuni hisobot va tavsiyalar"
+      },
+      "stepfive": {
+        "title": "Qo‘llab-quvvatlash va takomillashtirish nazorati"
+      }
+    },
+    "principles": {
+      "approachAdvantages": "Bizning yondashuvimiz afzalliklari",
+      "transparency": {
+        "title": "Shaffoflik",
+        "desc": "Har bir bosqichda to‘liq hisobot"
+      },
+      "quality": {
+        "title": "Sifat",
+        "desc": "Barcha bosqichlarda qat'iy sifat nazorati"
+      },
+      "result": {
+        "title": "Natija",
+        "desc": "Belgilanadigan maqsadlarga kafolatli erishish"
+      }
+    }
   }
 }
