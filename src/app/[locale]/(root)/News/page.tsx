@@ -1,7 +1,7 @@
 import { Calendar, User, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { newsData } from "../../../constants/page";
 import Link from "next/link";
+import { newsData } from "../../../../../constants/page";
 
 export default function News() {
   const news = newsData;
