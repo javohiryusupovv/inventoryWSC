@@ -2,21 +2,21 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "../../../../../constants/page";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function News() {
   const locale = useLocale()
   const news = newsData;
+  const t = useTranslations("HomePage")
   return (
     <section className="py-20 pt-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
-            Новости и статьи
+            {t("newsAndArticles")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Актуальная информация о складской логистике, новых технологиях и
-            лучших практиках
+            {t("newsAndArticlesDesc")}
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function News() {
                 href={`/${locale}/news/${item.slug}`}
                 className="text-purple-600 flex items-center gap-1 font-medium"
               >
-                Читать <ArrowRight className="w-4 h-4" />
+                {t("read")} <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           ))}

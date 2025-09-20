@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "Inventarizatsiya va omborlarni audit qilish butun O'zbekiston bo'ylab",
     "subtitle": "Aniq tekshiruv, arzon narxlar, natija kafolati va qo'llab-quvvatlash",
-    "callButton": "Request Service",
+    "callButton": "Murojaat qilish",
     "telegram": "Aloqa Telegram",
     "responseTime": "Ish vaqtida 1 soat ichida javob beramiz",
     "whyChooseUs": "Nega bizni tanlashadi",
@@ -90,6 +90,109 @@
         "title": "Natija",
         "desc": "Belgilanadigan maqsadlarga kafolatli erishish"
       }
+    },
+    "newsAndArticles": "Yangiliklar va maqolalar",
+    "newsAndArticlesDesc": "Ombor logistikasidagi so'nggi ma'lumotlar, yangi texnologiyalar va eng yaxshi amaliyotlar",
+    "read": "O'qish",
+    "news": "Yangiliklar",
+    "callToAction": {
+      "title": "Omborda tartib o'rnatmoqchimisiz?",
+      "desc": "Ariza qoldiring — 1 soat ichida bog'lanamiz",
+      "responseTime": {
+        "value": "1 soat",
+        "label": "Javob vaqti"
+      },
+      "consultation": {
+        "value": "Bepul",
+        "label": "Konsultatsiya"
+      },
+      "confidentiality": {
+        "value": "100%",
+        "label": "Maxfiylik"
+      }
+    },
+    "contacts": {
+      "title": "Kontaktlar",
+      "desc": "Biz bilan qulay usulda bog'laning — biz har doim yordam berishga tayyormiz"
+    },
+    "contactInfo": {
+      "contactLabels": {
+        "phone": "Telefon",
+        "email": "Email",
+        "address": "Manzil",
+        "workingHours": "Ish vaqti",
+        "telegram": "Telegram"
+      },
+      "address": "Toshkent sh., Amir Temur ko'chasi, 123\nBiznes-markaz \"Inventory\", 5-qavat",
+      "workingHours": {
+        "mondayToFriday": "Dushanba - Juma: 9:00 - 18:00",
+        "saturday": "Shanba: 9:00 - 14:00",
+        "sunday": "Yakshanba: dam olish kuni"
+      },
+      "telegram": "Tezkor aloqa messenjerda",
+      "writeButton": "Yozish",
+      "map": "Interaktiv xarita",
+      "urgentConsultation": {
+        "title": "Tezkor maslahat kerakmi?",
+        "desc": "Ariza qoldiring va biz 15 daqiqa ichida qayta qo'ng'iroq qilamiz",
+        "button": "Tezkor maslahat"
+      }
+    }
+  },
+  "FooterPage": {
+    "slogan": "Butun O'zbekiston bo'ylab professional inventarizatsiya va ombor auditlari",
+    "navigation": "Navigatsiya",
+    "links": {
+      "services": "Xizmatlar",
+      "howWeWork": "Qanday ishlaymiz",
+      "cases": "Keyslar",
+      "news": "Yangiliklar",
+      "contacts": "Kontaktlar"
+    },
+    "contact": {
+      "phone": "+998 (90) 123-45-67",
+      "email": "info@inventory.uz",
+      "address": "Toshkent shahri, Amir Temur ko'chasi, 123"
+    },
+    "workingHours": {
+      "title": "Ish vaqti",
+      "mondayFriday": "Du-Ju: 9:00 - 18:00",
+      "saturday": "Sh: 9:00 - 14:00",
+      "sunday": "Yakshanba: dam olish kuni"
+    },
+    "footerBottom": {
+      "rights": "Inventory Uzbekistan. Barcha huquqlar himoyalangan.",
+      "privacyPolicy": "Maxfiylik siyosati",
+      "cookies": "Cookies"
+    }
+  },
+  "Form": {
+    "title": "Ariza shakli",
+    "subtitle": "Shaklni to‘ldiring va biz siz bilan bog‘lanamiz",
+    "name": {
+      "label": "Ism",
+      "placeholder": "Ismingizni kiriting"
+    },
+    "phone": {
+      "label": "Telefon *",
+      "placeholder": "90 123 45 67"
+    },
+    "comment": {
+      "label": "Izoh",
+      "placeholder": "Sizning izohingiz"
+    },
+    "agreement": "Men shartlarga roziman",
+    "submit": "Yuborish",
+    "validation": {
+      "phone": "Telefon 9 ta raqamdan iborat bo'lishi kerak"
+    },
+    "success": {
+      "title": "Ariza yuborildi!",
+      "message": "Biz siz bilan tez orada bog'lanamiz"
+    },
+    "stats": {
+      "projects": "loyihalar",
+      "years": "yillik tajriba"
     }
   }
 }

@@ -39,6 +39,7 @@ export default function ModalAriza() {
   const [open, setOpen] = useState(false);
   const [success, setSuccess] = useState(false);
   const t = useTranslations("HomePage");
+  const m = useTranslations("Form");
 
   const {
     register,
@@ -86,11 +87,11 @@ export default function ModalAriza() {
         <DialogContent>
           <DialogHeader>
             <DialogTitle className="text-lg font-semibold">
-              {!success ? "Форма заявки" : ""}
+              {!success ? m("title") : ""}
             </DialogTitle>
             {!success && (
               <DialogDescription>
-                Заполните форму, и мы с вами свяжемся
+                {m("subtitle")}
               </DialogDescription>
             )}
           </DialogHeader>
@@ -103,23 +104,23 @@ export default function ModalAriza() {
               id="modal-form"
             >
               <div className="space-y-2">
-                <label htmlFor="name">Имя</label>
+                <label htmlFor="name">{m("name.label")}</label>
                 <Input
                   id="name"
-                  placeholder="Введите ваше имя"
+                  placeholder={m("name.placeholder")}
                   {...register("name")}
                 />
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="phone">Телефон *</label>
+                <label htmlFor="phone">{m("phone.label")}</label>
                 <article className="flex items-center gap-2 border rounded-md px-2">
                   <span>+998</span>
                   <input
                     className="w-full h-full outline-none py-2"
                     id="phone"
                     type="tel"
-                    placeholder="90 123 45 67"
+                    placeholder={m("phone.placeholder")}
                     maxLength={9}
                     {...register("phone")}
                     onInput={(e) => {
@@ -136,10 +137,10 @@ export default function ModalAriza() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="comment">Комментарий</label>
+                <label htmlFor="comment">{m("comment.label")}</label>
                 <Textarea
                   id="comment"
-                  placeholder="Ваш комментарий"
+                  placeholder={m("comment.placeholder")}
                   {...register("comment")}
                 />
               </div>
@@ -151,7 +152,7 @@ export default function ModalAriza() {
                   onCheckedChange={(val) => setValue("consent", !!val)}
                 />
                 <label htmlFor="privacy" className="text-sm">
-                  Я соглашаюсь с условиями{" "}
+                  {m("agreement")}{" "}
                   <span className="underline cursor-pointer">
                     Privacy Policy
                   </span>
@@ -165,7 +166,7 @@ export default function ModalAriza() {
                 type="submit"
                 className="w-full bg-blue-600 text-white px-4 py-2 rounded-md"
               >
-                Отправить
+                {m("submit")}
               </button>
             </form>
           ) : (
@@ -175,10 +176,10 @@ export default function ModalAriza() {
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
               <p className="text-lg font-medium text-green-600 mb-2">
-                Заявка отправлена!
+                {m("success.title")}
               </p>
               <p className="text-sm text-muted-foreground">
-                Мы свяжемся с вами в ближайшее время
+                {m("success.message")}
               </p>
             </div>
           )}

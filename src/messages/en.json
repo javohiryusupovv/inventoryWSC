@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "Inventory and warehouse audit across Uzbekistan",
     "subtitle": "Accurate inspection, low prices, guaranteed results and support",
-    "callButton": "Murojaat qilish",
+    "callButton": "Request Service",
     "telegram": "Contact via Telegram",
     "responseTime": "We will respond within 1 hour during working hours",
     "whyChooseUs": "Why choose us",
@@ -90,6 +90,107 @@
         "title": "Result",
         "desc": "Guaranteed achievement of set goals"
       }
+    },
+    "newsAndArticles": "News and Articles",
+    "newsAndArticlesDesc": "Relevant information about warehouse logistics, new technologies and best practices",
+    "read": "Read",
+    "news": "News",
+    "callToAction": {
+      "title": "Want to organize your warehouse?",
+      "desc": "Leave a request — we will contact you within 1 hour",
+      "responseTime": {
+        "value": "1 hour",
+        "label": "Response time"
+      },
+      "consultation": {
+        "value": "Free",
+        "label": "Consultation"
+      },
+      "confidentiality": {
+        "value": "100%",
+        "label": "Confidentiality"
+      }
+    },
+    "contacts": {
+      "title": "Contacts",
+      "desc": "Get in touch with us in a convenient way — we are always ready to help"
+    },
+    "contactInfo": {
+      "contactLabels": {
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "workingHours": "Working hours",
+        "telegram": "Telegram"
+      },
+      "address": "Tashkent, Amir Temur St., 123\nBusiness Center \"Inventory\", 5th floor",
+      "workingHours": {
+        "mondayToFriday": "Monday - Friday: 9:00 - 18:00",
+        "saturday": "Saturday: 9:00 - 14:00",
+        "sunday": "Sunday: closed"
+      },
+      "telegram": "Quick contact via messenger",
+      "writeButton": "Write",
+      "map": "Interactive map",
+      "urgentConsultation": {
+        "title": "Need urgent consultation?",
+        "desc": "Leave a request and we will call back within 15 minutes",
+        "button": "Urgent consultation"
+      }
+    }
+  },
+  "FooterPage": {
+    "slogan": "Professional inventory and warehouse audit across Uzbekistan",
+    "navigation": "Navigation",
+    "links": {
+      "services": "Services",
+      "howWeWork": "How we work",
+      "cases": "Cases",
+      "news": "News",
+      "contacts": "Contacts"
+    },
+    "contact": {
+      "address": "Tashkent, Amir Temur Street, 123"
+    },
+    "workingHours": {
+      "title": "Working hours",
+      "mondayFriday": "Mon-Fri: 9:00 - 18:00",
+      "saturday": "Sat: 9:00 - 14:00",
+      "sunday": "Sun: closed"
+    },
+    "footerBottom": {
+      "rights": "Inventory Uzbekistan. All rights reserved.",
+      "privacyPolicy": "Privacy Policy",
+      "cookies": "Cookies"
+    }
+  },
+  "Form": {
+    "title": "Application Form",
+    "subtitle": "Fill out the form and we will contact you",
+    "name": {
+      "label": "Name",
+      "placeholder": "Enter your name"
+    },
+    "phone": {
+      "label": "Phone *",
+      "placeholder": "90 123 45 67"
+    },
+    "comment": {
+      "label": "Comment",
+      "placeholder": "Your comment"
+    },
+    "agreement": "I agree to the terms",
+    "submit": "Submit",
+    "validation": {
+      "phone": "Phone number must contain 9 digits"
+    },
+    "success": {
+      "title": "Application sent!",
+      "message": "We will contact you shortly"
+    },
+    "stats": {
+      "projects": "projects",
+      "years": "years of experience"
     }
   }
 }
