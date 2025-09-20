@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 export default function HomeSection() {
     const t = useTranslations("HomePage");
+    const f = useTranslations("Form");
     return (
         <section className="pb-20 pt-[120px] lg:py-32">
             <div className="container mx-auto px-4">
@@ -59,12 +60,12 @@ export default function HomeSection() {
                         {/* Floating Stats Cards */}
                         <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-lg p-4 shadow-lg">
                             <div className="text-2xl font-bold text-primary">10+</div>
-                            <div className="text-sm text-muted-foreground">лет опыта</div>
+                            <div className="text-sm text-muted-foreground">{f("stats.years")}</div>
                         </div>
 
                         <div className="absolute -top-6 -right-6 bg-card border border-border rounded-lg p-4 shadow-lg">
                             <div className="text-2xl font-bold text-black">500+</div>
-                            <div className="text-sm text-muted-foreground">проектов</div>
+                            <div className="text-sm text-muted-foreground">{f("stats.projects")}</div>
                         </div>
                     </div>
                 </div>

@@ -4,57 +4,59 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 // import Logo from "../../../public/icons/logo.svg"
 import Logo from "../../../../../../public/logo.svg"
 import Image from "next/image"
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 
 export default function FooterPage() {
     const locale = useLocale()
+    const t = useTranslations("FooterPage")
+
     return (
         <footer className="bg-muted border-t border-border">
             <div className="container mx-auto px-4 py-12">
                 <div className="grid md:grid-cols-4 gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <Image src={Logo} alt="Logo Inventory.uz"  className="w-[200px]"/>
+                        <Image src={Logo} alt="Logo Inventory.uz" className="w-[200px]" />
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                            Профессиональная инвентаризация и аудит складов по всему Узбекистану
+                            {t("slogan")}
                         </p>
                     </div>
 
                     {/* Navigation */}
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-foreground">Навигация</h3>
+                        <h3 className="font-semibold text-foreground">{t("navigation")}</h3>
                         <nav className="space-y-2">
                             <Link
                                 href={`#services`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
-                                Услуги
+                                {t("links.services")}
                             </Link>
                             <Link
                                 href={`#workflow`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
-                                Как работаем
+                                {t("links.howWeWork")}
                             </Link>
                             <Link
                                 href={`#cases`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
-                                Кейсы
+                                {t("links.cases")}
                             </Link>
                             <Link
                                 href={`/news`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
-                                Новости
+                                {t("links.news")}
                             </Link>
                         </nav>
                     </div>
 
                     {/* Contact Info */}
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-foreground">Контакты</h3>
+                        <h3 className="font-semibold text-foreground">{t("links.contacts")}</h3>
                         <div className="space-y-3">
                             <a
                                 href="tel:+998901234567"
@@ -72,20 +74,20 @@ export default function FooterPage() {
                             </a>
                             <div className="flex items-start space-x-2 text-sm text-muted-foreground">
                                 <MapPin className="w-4 h-4 mt-0.5" />
-                                <span>г. Ташкент, ул. Амира Темура, 123</span>
+                                <span>{t("contact.address")}</span>
                             </div>
                         </div>
                     </div>
 
                     {/* Working Hours */}
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-foreground">Режим работы</h3>
+                        <h3 className="font-semibold text-foreground">{t("workingHours.title")}</h3>
                         <div className="flex items-start space-x-2 text-sm text-muted-foreground">
                             <Clock className="w-4 h-4 mt-0.5" />
                             <div>
-                                <div>Пн-Пт: 9:00 - 18:00</div>
-                                <div>Сб: 9:00 - 14:00</div>
-                                <div>Вс: выходной</div>
+                                <div>{t("workingHours.mondayFriday")}</div>
+                                <div>{t("workingHours.saturday")}</div>
+                                <div>{t("workingHours.sunday")}</div>
                             </div>
                         </div>
                     </div>
@@ -93,19 +95,19 @@ export default function FooterPage() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Inventory Uzbekistan. Все права защищены.</p>
+                    <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} {t("footerBottom.rights")}</p>
                     <div className="flex space-x-6">
                         <Link
                             href={`/${locale}/privacy`}
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                         >
-                            Политика конфиденциальности
+                            {t("footerBottom.privacyPolicy")}
                         </Link>
                         <Link
                             href={`/${locale}/cookies`}
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                         >
-                            Cookies
+                            {t("footerBottom.cookies")}
                         </Link>
                     </div>
                 </div>
