@@ -2,8 +2,10 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "../../../../../constants/page";
+import { useLocale } from "next-intl";
 
 export default function News() {
+  const locale = useLocale()
   const news = newsData;
   return (
     <section className="py-20 pt-32 bg-background">
@@ -60,7 +62,7 @@ export default function News() {
                 ))}
               </div>
               <Link
-                href={`/news/${item.slug}`}
+                href={`/${locale}/news/${item.slug}`}
                 className="text-purple-600 flex items-center gap-1 font-medium"
               >
                 Читать <ArrowRight className="w-4 h-4" />

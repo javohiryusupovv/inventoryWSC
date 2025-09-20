@@ -4,8 +4,6 @@ import FooterPage from "@/app/[locale]/(root)/components/Footer/FooterPage"
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-    console.log("test");
-
     return (
         <>
             <NavbarLayout />

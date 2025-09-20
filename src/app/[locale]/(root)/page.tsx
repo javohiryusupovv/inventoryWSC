@@ -16,6 +16,6 @@ export default function Home() {
       <NewsHome/>
       <CTA/>
       <Contact/>
-    </div>
+    </div>  
   );
 }

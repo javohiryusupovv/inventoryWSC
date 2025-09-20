@@ -3,10 +3,12 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { newsData } from "../../../../../../constants/page";
+import { useLocale } from "next-intl";
 
 
 export default function NewsHome() {
     const news = newsData;
+    const locale = useLocale()
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -62,7 +64,7 @@ export default function NewsHome() {
                 ))}
               </div>
               <Link
-                href={`/news/${item.slug}`}
+                href={`/${locale}/news/${item.slug}`}
                 className="text-purple-600 flex items-center gap-1 font-medium"
               >
                 Читать <ArrowRight className="w-4 h-4" />
@@ -73,7 +75,7 @@ export default function NewsHome() {
 
         {/* View All News Button */}
         <div className="text-center">
-          <Link href={`/news`}>
+          <Link href={`/${locale}/news`}>
             <Button
               size="lg"
               variant="outline"

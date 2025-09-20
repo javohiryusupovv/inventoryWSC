@@ -2,11 +2,13 @@
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 // import Logo from "../../../public/icons/logo.svg"
-import Logo from "../../../../../../public/icons/logo.svg"
+import Logo from "../../../../../../public/logo.svg"
 import Image from "next/image"
+import { useLocale } from "next-intl"
 
 
 export default function FooterPage() {
+    const locale = useLocale()
     return (
         <footer className="bg-muted border-t border-border">
             <div className="container mx-auto px-4 py-12">
@@ -94,13 +96,13 @@ export default function FooterPage() {
                     <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Inventory Uzbekistan. Все права защищены.</p>
                     <div className="flex space-x-6">
                         <Link
-                            href={`/privacy`}
+                            href={`/${locale}/privacy`}
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                         >
                             Политика конфиденциальности
                         </Link>
                         <Link
-                            href={`/cookies`}
+                            href={`/${locale}/cookies`}
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                         >
                             Cookies
