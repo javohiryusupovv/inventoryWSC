@@ -59,7 +59,7 @@ export default function HomeSection() {
 
                         {/* Floating Stats Cards */}
                         <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-lg p-4 shadow-lg">
-                            <div className="text-2xl font-bold text-primary">10+</div>
+                            <div className="text-2xl font-bold text-primary">15+</div>
                             <div className="text-sm text-muted-foreground">{f("stats.years")}</div>
                         </div>
 
