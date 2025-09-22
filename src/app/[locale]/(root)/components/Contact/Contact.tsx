@@ -37,7 +37,7 @@ export default function Contact() {
                     href="tel:+998916440702"
                     className="text-muted-foreground hover:text-[#aa60fa] transition-colors"
                   >
-                    +998 (90) 070 02 51
+                    +998 (91) 644 07 02
                   </a>
                 </CardContent>
               </Card>
