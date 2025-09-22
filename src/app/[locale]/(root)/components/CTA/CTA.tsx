@@ -25,16 +25,16 @@ export default function CTA() {
               {/* CTA Buttons */}
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <ModalAriza />
-                <Link href={"https://t.me/InventoryUz"} target="_blank">
+                <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full">
                   <Button
                     variant="outline"
                     size="lg"
-                    className="flex group items-center !bg-[#aa60fa] text-white hover:!bg-[#aa60fa]/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
+                    className="flex items-center w-full !bg-[#aa60fa] text-white hover:!bg-[#aa60fa]/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
                   >
                     <MessageCircle className="w-5 h-5" />
                     <span>{t("telegram")}</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
+
                 </Link>
               </div>
 

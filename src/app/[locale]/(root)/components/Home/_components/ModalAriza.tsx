@@ -78,7 +78,7 @@ export default function ModalAriza() {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger
           onClick={() => setOpen(true)}
-          className="flex w-full justify-center text-[#aa60fa] border-[#aa60fa] hover:bg-[#aa60fa] transition-all duration-200 hover:text-white items-center space-x-2 text-lg px-8 py-[10px] rounded-[6px] border"
+          className="flex w-full justify-center text-[#aa60fa] border-[#aa60fa] hover:bg-[#aa60fa] transition-all duration-200 hover:text-white items-center space-x-2 text-lg px-8 py-[10px] rounded-md border"
         >
           <MessagesSquare className="w-5 h-5" />
           <span>{t("callButton")}</span>
