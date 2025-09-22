@@ -6,7 +6,8 @@ import { useTranslations } from "next-intl";
 
 export default function Contact() {
   const t = useTranslations("HomePage.contacts")
-  const p = useTranslations("HomePage.contactInfo") 
+  const p = useTranslations("HomePage.contactInfo")
+  const f = useTranslations("FooterPage.contact")
   return (
     <section id="contacts" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -19,7 +20,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="grid sm:grid-cols-2 gap-6">
@@ -33,7 +34,7 @@ export default function Contact() {
                     {p("contactLabels.phone")}
                   </h3>
                   <a
-                    href="tel:+998900700251"
+                    href="tel:+998916440702"
                     className="text-muted-foreground hover:text-[#aa60fa] transition-colors"
                   >
                     +998 (90) 070 02 51
@@ -118,7 +119,7 @@ export default function Contact() {
                       </p>
                     </div>
                   </div>
-                  <Link href={"https://t.me/Javoxir_iq"} target="_blank">
+                  <Link href={"https://t.me/InventoryUz"} target="_blank">
                     <Button variant="outline" size="sm">
                       {p("writeButton")}
                     </Button>
@@ -133,13 +134,7 @@ export default function Contact() {
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="w-full h-96 bg-muted flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">{p("map")}</p>
-                    <p className="text-sm text-muted-foreground">
-                      г. Ташкент, ул. Амира Темура, 123
-                    </p>
-                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.339267210929!2d69.31522167653975!3d41.301482501318546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5112d8efde1%3A0x9599cb3144fe01e0!2zMiAyLCDRg9C70LjRhtCwINCc0LDRhdGC0YPQvNC60YPQu9C4IDEyMiwg0KLQvnNoa2VudCwgVG9zaGtlbnQsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1758517357628!5m2!1sru!2s" width="600" height="450" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </CardContent>
             </Card>
@@ -153,7 +148,7 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4">
                   {p("urgentConsultation.desc")}
                 </p>
-                <Link href={"tel:+998900700251"}>
+                <Link href={"tel:+998916440702"}>
                   <Button className="w-full">{p("urgentConsultation.button")}</Button>
                 </Link>
               </CardContent>

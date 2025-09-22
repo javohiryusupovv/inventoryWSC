@@ -30,6 +30,9 @@ export async function generateMetadata(
   return {
     title: t.title,
     description: t.description,
+    icons: {
+      icon: "/inventory.ico",
+    },
     alternates: {
       canonical: `https://inventory.uz${locale === "ru" ? "" : `/${locale}`}`,
       languages: {
@@ -80,25 +83,35 @@ export default async function RootLayout({
         <link rel="canonical" href="https://inventory.uz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1f2937" />
+        {/* Yandex.Metrika */}
         <script
-          type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Inventory Uzbekistan",
-              url: "https://inventory.uz",
-              logo: "https://inventory.uz/logo.svg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+998 90 123 45 67",
-                contactType: "customer service",
-                areaServed: "UZ",
-                availableLanguage: ["Russian", "Uzbek", "English"],
-              },
-            }),
+            __html: `
+              (function(m,e,t,r,i,k,a){
+                  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                  m[i].l=1*new Date();
+                  k=e.createElement(t),a=e.getElementsByTagName(t)[0],
+                  k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+              })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+              ym(104234789, "init", {
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+            `,
           }}
         />
+        <noscript>
+          <div>
+            <img
+              src="https://mc.yandex.ru/watch/104234789"
+              style={{ position: "absolute", left: "-9999px" }}
+              alt=""
+            />
+          </div>
+        </noscript>
       </head>
       <body suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>

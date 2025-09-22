@@ -11,7 +11,7 @@ export default function NewsHome() {
     const locale = useLocale()
     const t = useTranslations("HomePage")
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 max-sm:py-10 max-sm:pb-5 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">

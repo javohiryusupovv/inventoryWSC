@@ -48,11 +48,11 @@ export default function NavbarLayout() {
             <div className="flex items-center space-x-8">
               <div className="hidden md:flex items-center space-x-4 text-sm text-muted-foreground">
                 <a
-                  href="tel:+998900700251"
+                  href="tel:+998916440702"
                   className="flex items-center space-x-1 hover:text-foreground transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+998 (90) 070 02 51</span>
+                  <span>+998 (91) 644 07 02</span>
                 </a>
                 <a
                   href="mailto:info@inventory.uz"

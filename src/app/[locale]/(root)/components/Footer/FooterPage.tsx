@@ -59,11 +59,11 @@ export default function FooterPage() {
                         <h3 className="font-semibold text-foreground">{t("links.contacts")}</h3>
                         <div className="space-y-3">
                             <a
-                                href="tel:+998901234567"
+                                href="tel:+998916440702"
                                 className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 <Phone className="w-4 h-4" />
-                                <span>+998 (90) 123-45-67</span>
+                                <span>+998 (91) 644-07-02</span>
                             </a>
                             <a
                                 href="mailto:info@inventory.uz"
