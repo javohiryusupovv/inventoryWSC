@@ -41,9 +41,9 @@ export default function MenyuLanguage() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <button className="flex items-center px-3 py-1 border rounded-md bg-white hover:bg-gray-100 transition">
+        <button className="flex items-center px-3 py-1 border rounded-md bg-white border-[#aa60fa] hover:bg-gray-100 transition">
           <Globe className="w-4 h-4 mr-2" />
-          <span className="capitalize">{currentLang}</span>
+          <span className="uppercase">{currentLang}</span>
         </button>
       </PopoverTrigger>
       <PopoverContent className="w-32 p-2 -translate-x-5">
