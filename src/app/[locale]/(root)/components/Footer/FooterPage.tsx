@@ -73,7 +73,7 @@ export default function FooterPage() {
                                 <span>info@inventory.uz</span>
                             </a>
                             <div className="flex items-start space-x-2 text-sm text-muted-foreground">
-                                <MapPin className="w-4 h-4 mt-0.5" />
+                                <MapPin className="sm:w-10 sm:h-10 w-5 h-5 sm:mt-0.5" />
                                 <span>{t("contact.address")}</span>
                             </div>
                         </div>

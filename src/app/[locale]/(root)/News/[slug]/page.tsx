@@ -52,7 +52,7 @@ export default async function Page({ params }: ArticlePageParams) {
 
   return (
     <main className="min-h-screen">
-      <article className="py-20 pt-[50px] bg-background">
+      <article className="bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <div className="mb-8">
@@ -122,10 +122,10 @@ export default async function Page({ params }: ArticlePageParams) {
 
           {/* Article Footer */}
           <footer className="mt-16 pt-8 border-t border-border">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start">
               <div className="text-sm text-muted-foreground">Опубликовано {article.date}</div>
               <div className="flex items-center space-x-4">
-                <span className="text-sm text-muted-foreground">Поделиться:</span>
+                <span className="text-sm text-muted-foreground max-sm:text-end">Поделиться:</span>
                 <Button variant="ghost" size="sm">Facebook</Button>
                 <Button variant="ghost" size="sm">Twitter</Button>
                 <Button variant="ghost" size="sm">LinkedIn</Button>
