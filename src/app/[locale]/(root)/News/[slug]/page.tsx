@@ -83,16 +83,7 @@ export default async function Page({ params }: ArticlePageParams) {
                   <Calendar className="w-4 h-4" />
                   <span>{article.date}</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <User className="w-4 h-4" />
-                  <span>{article.author}</span>
-                </div>
               </div>
-
-              <Button variant="outline" size="sm" className="flex items-center space-x-2 bg-transparent">
-                <Share2 className="w-4 h-4" />
-                <span>Поделиться</span>
-              </Button>
             </div>
           </header>
 
@@ -107,7 +98,7 @@ export default async function Page({ params }: ArticlePageParams) {
           </div>
 
           {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg pb-10 max-w-none">
             <div className="text-foreground leading-relaxed">
               <p className="mb-5">
                 Здесь будет полный контент статьи с подробным описанием темы, анализом ситуации,
@@ -119,19 +110,6 @@ export default async function Page({ params }: ArticlePageParams) {
               </p>
             </div>
           </div>
-
-          {/* Article Footer */}
-          <footer className="mt-16 pt-8 border-t border-border">
-            <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start">
-              <div className="text-sm text-muted-foreground">Опубликовано {article.date}</div>
-              <div className="flex items-center space-x-4">
-                <span className="text-sm text-muted-foreground max-sm:text-end">Поделиться:</span>
-                <Button variant="ghost" size="sm">Facebook</Button>
-                <Button variant="ghost" size="sm">Twitter</Button>
-                <Button variant="ghost" size="sm">LinkedIn</Button>
-              </div>
-            </div>
-          </footer>
         </div>
       </article>
     </main>

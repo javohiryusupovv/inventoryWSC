@@ -3,25 +3,29 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "../globals.css";
 
-
-export async function generateMetadata(
-  { params }: { params: { locale: string } }
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
   const locale = (await params).locale;
 
   // Til bo‘yicha matnlarni sozlash
   const meta = {
     ru: {
       title: "Inventory Uzbekistan – Инвентаризация складов",
-      description: "Профессиональная инвентаризация и аудит складов в Узбекистане. Точная проверка, оптимизация логистики, гарантия результата и лучшие цены.",
+      description:
+        "Профессиональная инвентаризация и аудит складов в Узбекистане. Точная проверка, оптимизация логистики, гарантия результата и лучшие цены.",
     },
     uz: {
       title: "Inventory Uzbekistan – Omborlarni inventarizatsiya qilish",
-      description: "Butun O‘zbekistonda omborlarni professional inventarizatsiya va auditi. Aniqlik, logistika optimallashtirish va kafolatlangan natija.",
+      description:
+        "Butun O‘zbekistonda omborlarni professional inventarizatsiya va auditi. Aniqlik, logistika optimallashtirish va kafolatlangan natija.",
     },
     en: {
       title: "Inventory Uzbekistan – Warehouse Inventory & Audit",
-      description: "Professional warehouse inventory and audit across Uzbekistan. Accurate checks, logistics optimization, guaranteed results and best prices.",
+      description:
+        "Professional warehouse inventory and audit across Uzbekistan. Accurate checks, logistics optimization, guaranteed results and best prices.",
     },
   };
 
@@ -66,16 +70,14 @@ export async function generateMetadata(
   };
 }
 
-
-
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<{
-  children: React.ReactNode,
-  params: Promise<{ locale: string }>
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
-  const locale = (await params).locale
+  const locale = (await params).locale;
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -83,35 +85,35 @@ export default async function RootLayout({
         <link rel="canonical" href="https://inventory.uz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1f2937" />
-        {/* Yandex.Metrika */}
+        {/* Yandex.Metrika counter */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              (function(m,e,t,r,i,k,a){
-                  m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                  m[i].l=1*new Date();
-                  k=e.createElement(t),a=e.getElementsByTagName(t)[0],
-                  k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-              })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) { return; }
+            }
+            k=e.createElement(t),
+            a=e.getElementsByTagName(t)[0],
+            k.async=1,
+            k.src=r,
+            a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104253355', 'ym');
 
-              ym(104234789, "init", {
-                  clickmap:true,
-                  trackLinks:true,
-                  accurateTrackBounce:true,
-                  webvisor:true
-              });
-            `,
+        ym(104253355, 'init', {
+            ssr:true,
+            webvisor:true,
+            clickmap:true,
+            ecommerce:"dataLayer",
+            accurateTrackBounce:true,
+            trackLinks:true
+        });
+      `,
           }}
         />
-        <noscript>
-          <div>
-            <img
-              src="https://mc.yandex.ru/watch/104234789"
-              style={{ position: "absolute", left: "-9999px" }}
-              alt=""
-            />
-          </div>
-        </noscript>
+        {/* /Yandex.Metrika counter */}
       </head>
       <body suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>

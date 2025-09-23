@@ -9,7 +9,7 @@ export default function HomeSection() {
     const t = useTranslations("HomePage");
     const f = useTranslations("Form");
     return (
-        <section className="pb-20 pt-[120px] lg:py-32">
+        <section className="pb-20 lg:py-16">
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Column - Content */}
@@ -28,7 +28,7 @@ export default function HomeSection() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className="flex items-center w-full !bg-[#aa60fa] text-white hover:!bg-[#aa60fa]/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
+                                    className="flex items-center w-full !bg-orange-400 text-white hover:!bg-orange-400/80 border-0 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
                                 >
                                     <MessageCircle className="w-5 h-5" />
                                     <span>{t("telegram")}</span>
@@ -64,7 +64,7 @@ export default function HomeSection() {
                         </div>
 
                         <div className="absolute -top-6 -right-6 bg-card border border-border rounded-lg p-4 shadow-lg">
-                            <div className="text-2xl font-bold text-black">500+</div>
+                            <div className="text-2xl font-bold text-black">50+</div>
                             <div className="text-sm text-muted-foreground">{f("stats.projects")}</div>
                         </div>
                     </div>

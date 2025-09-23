@@ -46,11 +46,11 @@ export default function ServicePage() {
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-card">
                 <CardHeader className="pb-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center group-hover:bg-[#aa60fa]/20 transition-colors">
-                      <Icon className="w-6 h-6 text-[#aa60fa]" />
+                    <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
+                      <Icon className="w-6 h-6 text-orange-400" />
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="text-xl text-foreground group-hover:text-[#aa60fa] transition-colors text-balance">
+                      <CardTitle className="text-xl text-foreground group-hover:text-orange-400 transition-colors text-balance">
                         {service.title}
                       </CardTitle>
                     </div>
@@ -58,10 +58,6 @@ export default function ServicePage() {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <p className="text-muted-foreground leading-relaxed mb-6 text-pretty">{service.description}</p>
-                  <Button variant="ghost" className="group/btn p-0 h-auto text-accent hover:text-[#aa60fa]">
-                    {s("more")}
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
                 </CardContent>
               </Card>
             )
@@ -71,15 +67,15 @@ export default function ServicePage() {
         {/* Service Features Grid */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#aa60fa] mb-2">{f("support.value")}</div>
+            <div className="text-3xl font-bold text-orange-500 mb-2">{f("support.value")}</div>
             <p className="text-muted-foreground">{f("support.label")}</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#aa60fa] mb-2">{f("accuracy.value")}</div>
+            <div className="text-3xl font-bold text-orange-500 mb-2">{f("accuracy.value")}</div>
             <p className="text-muted-foreground">{f("accuracy.label")}</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-[#aa60fa] mb-2">{f("time.value")}</div>
+            <div className="text-3xl font-bold text-orange-500 mb-2">{f("time.value")}</div>
             <p className="text-muted-foreground">{f("time.label")}</p>
           </div>
         </div>

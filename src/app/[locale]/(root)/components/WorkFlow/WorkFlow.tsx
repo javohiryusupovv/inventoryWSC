@@ -50,7 +50,7 @@ export default function WorkFlow() {
                             {steps.map((step, index) => (
                                 <div key={index} className="relative">
                                     {/* Step Circle */}
-                                    <div className="relative z-10 w-16 h-16 bg-[#aa60fa] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                    <div className="relative z-10 w-16 h-16 bg-orange-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                                         <span className="text-white font-bold text-lg">{index + 1}</span>
                                     </div>
 
@@ -58,8 +58,8 @@ export default function WorkFlow() {
                                     <Card className="text-center group hover:shadow-lg transition-all duration-300">
                                         <CardContent className="py-6 px-3">
                                             <h3 className="font-semibold text-foreground mb-2 text-balance">{step.title}</h3>
-                                            <div className="w-8 h-8 bg-[#aa60fa]/10 rounded-full flex items-center justify-center mx-auto group-hover:bg-[#aa60fa]/20 transition-colors">
-                                                <CheckCircle className="w-4 h-4 text-[#aa60fa]" />
+                                            <div className="w-8 h-8 bg-orange-400/10 rounded-full flex items-center justify-center mx-auto group-hover:bg-orange-400/20 transition-colors">
+                                                <CheckCircle className="w-4 h-4 text-orange-400" />
                                             </div>
                                         </CardContent>
                                     </Card>
@@ -67,7 +67,7 @@ export default function WorkFlow() {
                                     {/* Arrow (except for last item) */}
                                     {index < steps.length - 1 && (
                                         <div className="absolute top-5 -right-2 z-20">
-                                            <ArrowRight className="w-4 h-4 text-[#aa60fa]" />
+                                            <ArrowRight className="w-4 h-4 text-orange-400" />
                                         </div>
                                     )}
                                 </div>
