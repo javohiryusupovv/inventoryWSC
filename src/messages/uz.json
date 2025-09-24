@@ -194,5 +194,157 @@
       "projects": "loyihalar",
       "years": "yillik tajriba"
     }
+  },
+  "cookies": {
+    "title": "Maxfiylik siyosati - Inventory Uzbekistan",
+    "description": "Inventory Uzbekistan kompaniyasining maxfiylik siyosati va shaxsiy ma’lumotlarni qayta ishlash tartibi.",
+    "pageTitle": "Maxfiylik siyosati",
+    "pageSubtitle": "Shaxsiy ma’lumotlarni yig‘ish, qayta ishlash va himoya qilish haqida ma’lumot",
+    "effectiveDate": "Amalga kirish sanasi: 01.09.2025",
+    "section1Title": "1. Umumiy qoidalar",
+    "section1Text1": "Ushbu Maxfiylik siyosati (keyingi o‘rinlarda — «Siyosat») https://www.inventory.uz sayti (keyingi o‘rinlarda — «Sayt») foydalanuvchilarining shaxsiy ma’lumotlarini qayta ishlash va himoya qilish tartibini belgilaydi.",
+    "section1Text2": "Shaxsiy ma’lumotlar operatori «WS Consulting» MCHJ hisoblanadi (keyingi o‘rinlarda — «Operator»).",
+    "section1Text3": "Siyosat O‘zbekiston Respublikasi «Shaxsiy ma’lumotlar to‘g‘risida»gi Qonuni №ЗРУ-547 (2019-yil 2-iyul) hamda boshqa amaldagi normativ hujjatlar asosida ishlab chiqilgan.",
+    "section2Title": "2. Shaxsiy ma’lumotlar",
+    "section2Intro": "Shaxsiy ma’lumotlarga foydalanuvchiga bevosita yoki bilvosita aloqador bo‘lgan quyidagi ma’lumotlar kiradi:",
+    "section2List": [
+      "familiya, ism, otasining ismi;",
+      "aloqa telefoni, elektron pochta manzili;",
+      "kompaniya ma’lumotlari (yuridik shaxs vakillari uchun);",
+      "foydalanuvchi Saytdagi shakllarga kiritgan ma’lumotlari;",
+      "texnik ma’lumotlar: IP-manzil, cookie fayllari, brauzer va qurilma haqidagi ma’lumotlar."
+    ],
+    "section3Title": "3. Qayta ishlash maqsadlari",
+    "section3Intro": "Shaxsiy ma’lumotlar faqat quyidagi maqsadlarda qayta ishlanadi:",
+    "section3List": [
+      "omborxona inventarizatsiyasi va auditi xizmatlarini taqdim etish;",
+      "foydalanuvchilar bilan aloqa qilish, jumladan so‘rovlarga javob berish va rozilik asosida xabar yuborish;",
+      "shartnomaviy majburiyatlarni bajarish;",
+      "O‘zbekiston Respublikasi qonunchiligi talablarini bajarish;",
+      "Sayt tashriflarini tahlil qilish va uning ishini yaxshilash."
+    ],
+    "section4Title": "4. Huquqiy asoslar",
+    "section4Text1": "Shaxsiy ma’lumotlarni qayta ishlash asosi — foydalanuvchining Saytdagi shakllarni to‘ldirish yoki Saytdan foydalanish jarayonida bildirgan roziligi.",
+    "section4Text2": "Shuningdek, qayta ishlash qonunchilik talablarini bajarish uchun amalga oshirilishi mumkin.",
+    "section5Title": "5. Ma’lumotlarni uzatish va saqlash",
+    "section5List": [
+      "Shaxsiy ma’lumotlar faqat shartnomaviy majburiyatlarni bajarish uchun hamkorlarga va pudratchilarga berilishi mumkin;",
+      "qonunda belgilangan hollarda davlat organlariga;",
+      "uchinchi tomon xizmatlariga (masalan, hosting provayderlari, tahlil tizimlari)."
+    ],
+    "section5Text1": "Ma’lumotlar transchegaraviy uzatilishi mumkin, agar ular shaxsiy ma’lumotlarni yetarli darajada himoya qiladigan davlatlarga (masalan, Google, Amazon va boshqalar serverlari yoki xizmatlari).",
+    "section5Text2": "Ma’lumotlar qayta ishlash maqsadlariga erishilgunga qadar, ammo zarur bo‘lganidan ortiq muddatga saqlanmaydi.",
+    "section6Title": "6. Foydalanuvchi huquqlari",
+    "section6Intro": "Foydalanuvchi quyidagi huquqlarga ega:",
+    "section6List": [
+      "o‘z ma’lumotlarini qayta ishlash haqida ma’lumot olish;",
+      "ma’lumotlarni tuzatish, bloklash yoki o‘chirishni talab qilish;",
+      "roziligini qaytarib olish;",
+      "O‘zbekiston Respublikasining vakolatli davlat organiga shikoyat qilish."
+    ],
+    "section7Title": "7. Himoya choralar",
+    "section7Text": "Operator shaxsiy ma’lumotlarni ruxsatsiz kirish, o‘zgartirish, yo‘q qilish yoki tarqatishdan himoya qilish uchun zarur tashkiliy va texnik choralarni ko‘radi.",
+    "section8Title": "8. Siyosatdagi o‘zgarishlar",
+    "section8Text": "Operator ushbu Siyosatni yangilash huquqini o‘zida saqlab qoladi. Yangi tahrir Saytda joylashtirilgan paytdan boshlab kuchga kiradi.",
+    "section9Title": "9. Aloqa",
+    "section9Intro": "Shaxsiy ma’lumotlarni qayta ishlash bilan bog‘liq savollar bo‘yicha biz bilan bog‘lanishingiz mumkin:",
+    "section9List": [
+      "Email: info@inventory.uz",
+      "Telefon: +998 (XX) XXX-XX-XX"
+    ]
+  },
+  "privacy": {
+    "title": "Maxfiylik siyosati - Inventory Uzbekistan",
+    "description": "Inventory Uzbekistan kompaniyasining shaxsiy ma’lumotlarni yig‘ish, qayta ishlash va himoya qilish siyosati.",
+    "pageTitle": "Maxfiylik siyosati",
+    "pageSubtitle": "Shaxsiy ma’lumotlarni yig‘ish, qayta ishlash va himoya qilish haqida ma’lumot",
+    "effectiveDate": "Amalga kiritilgan sana: 01.09.2025",
+    "sections": {
+      "1": {
+        "title": "1. Umumiy qoidalar",
+        "content": [
+          "Ushbu Maxfiylik siyosati (keyingi o‘rinlarda — «Siyosat») https://www.inventory.uz (keyingi o‘rinlarda — «Sayt») foydalanuvchilarining shaxsiy ma’lumotlarini qayta ishlash va himoya qilish tartibini belgilaydi.",
+          "Shaxsiy ma’lumotlar operatori «WS Consulting» MCHJ hisoblanadi (keyingi o‘rinlarda — «Operator»).",
+          "Siyosat O‘zbekiston Respublikasi «Shaxsga doir ma’lumotlar to‘g‘risida»gi Qonuni №ЗРУ-547 (2019-yil 2-iyul) hamda boshqa tegishli me’yoriy hujjatlarga muvofiq ishlab chiqilgan."
+        ]
+      },
+      "2": {
+        "title": "2. Shaxsiy ma’lumotlar",
+        "content": [
+          "Shaxsiy ma’lumotlar deganda foydalanuvchiga oid yoki uni aniqlash imkonini beruvchi har qanday ma’lumot tushuniladi, jumladan:"
+        ],
+        "list": [
+          "familiya, ism, otasining ismi;",
+          "aloqa telefoni, elektron pochta manzili;",
+          "kompaniya ma’lumotlari (yuridik shaxs vakillari uchun);",
+          "foydalanuvchi Saytdagi formaga kiritgan ma’lumotlari;",
+          "texnik ma’lumotlar: IP-manzil, cookies, brauzer va qurilma haqida ma’lumot."
+        ]
+      },
+      "3": {
+        "title": "3. Qayta ishlash maqsadlari",
+        "content": [
+          "Shaxsiy ma’lumotlar faqat quyidagi maqsadlarda qayta ishlanadi:"
+        ],
+        "list": [
+          "ombor inventarizatsiyasi va audit xizmatlarini taqdim etish;",
+          "foydalanuvchilar bilan aloqa qilish, jumladan so‘rov va xatlarni qayta ishlash (rozilik bo‘lsa xabar yuborish);",
+          "shartnomaviy majburiyatlarni bajarish;",
+          "O‘zbekiston Respublikasi qonunchiligiga rioya qilish;",
+          "Sayt tashriflarini tahlil qilish va xizmatni yaxshilash."
+        ]
+      },
+      "4": {
+        "title": "4. Huquqiy asoslar",
+        "content": [
+          "Shaxsiy ma’lumotlarni qayta ishlashning asosiy huquqiy asosi foydalanuvchining Saytdagi formalarni to‘ldirish yoki Saytdan foydalanish orqali bergan roziligidir.",
+          "Shuningdek, qayta ishlash O‘zbekiston Respublikasi qonunchiligi talablari asosida amalga oshirilishi mumkin."
+        ]
+      },
+      "5": {
+        "title": "5. Ma’lumotlarni uzatish va saqlash",
+        "content": [
+          "Shaxsiy ma’lumotlar faqat shartnomaviy majburiyatlarni bajarish maqsadida hamkorlar va pudratchilarga uzatilishi mumkin;",
+          "qonunda ko‘zda tutilgan hollarda davlat organlariga;",
+          "uchinchi tomon xizmatlariga (masalan, hosting provayderlari, analitika tizimlari).",
+          "Ma’lumotlar transchegaraviy uzatilishi mumkin, agar qabul qiluvchi davlat shaxsiy ma’lumotlarni yetarli darajada himoya qilsa (masalan, Google, Amazon serverlari).",
+          "Ma’lumotlar qayta ishlash maqsadlariga erishilgunga qadar, lekin zarur muddatdan oshmagan holda saqlanadi."
+        ]
+      },
+      "6": {
+        "title": "6. Foydalanuvchi huquqlari",
+        "content": [
+          "Foydalanuvchi quyidagi huquqlarga ega:"
+        ],
+        "list": [
+          "o‘z ma’lumotlarining qayta ishlanishi haqida ma’lumot olish;",
+          "ma’lumotlarni tuzatishni, blokirovka qilishni yoki o‘chirishni talab qilish;",
+          "ma’lumotlarni qayta ishlashga bergan roziligini qaytarib olish;",
+          "O‘zbekiston Respublikasi vakolatli davlat organiga shikoyat berish."
+        ]
+      },
+      "7": {
+        "title": "7. Himoya choralar",
+        "content": [
+          "Operator shaxsiy ma’lumotlarni ruxsatsiz kirish, o‘zgartirish, yo‘q qilish yoki tarqatishdan himoya qilish uchun zarur tashkiliy va texnik choralarni ko‘radi."
+        ]
+      },
+      "8": {
+        "title": "8. Siyosatdagi o‘zgarishlar",
+        "content": [
+          "Operator ushbu Siyosatni yangilash huquqini o‘zida saqlab qoladi. Yangi tahrir Saytda e’lon qilingan paytdan boshlab kuchga kiradi."
+        ]
+      },
+      "9": {
+        "title": "9. Kontaktlar",
+        "content": [
+          "Shaxsiy ma’lumotlarni qayta ishlash bilan bog‘liq savollar bo‘yicha biz bilan bog‘lanishingiz mumkin:"
+        ],
+        "list": [
+          "Email: info@inventory.uz",
+          "Telefon: +998 (XX) XXX-XX-XX"
+        ]
+      }
+    }
   }
 }

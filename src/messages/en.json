@@ -192,5 +192,157 @@
       "projects": "projects",
       "years": "years of experience"
     }
+  },
+  "cookies": {
+    "title": "Privacy Policy - Inventory Uzbekistan",
+    "description": "Privacy policy and personal data processing rules of Inventory Uzbekistan company.",
+    "pageTitle": "Privacy Policy",
+    "pageSubtitle": "Information on the collection, processing and protection of personal data",
+    "effectiveDate": "Effective date: 01.09.2025",
+    "section1Title": "1. General Provisions",
+    "section1Text1": "This Privacy Policy (hereinafter — “Policy”) regulates the procedure for processing and protecting personal data of users of the website https://www.inventory.uz (hereinafter — “Website”).",
+    "section1Text2": "The operator of personal data is LLC “WS Consulting” (hereinafter — “Operator”).",
+    "section1Text3": "The Policy has been developed in accordance with the Law of the Republic of Uzbekistan “On Personal Data” No. ЗРУ-547 dated July 2, 2019, and other applicable legal acts.",
+    "section2Title": "2. Personal Data",
+    "section2Intro": "Personal data means any information relating to an identified or identifiable user, including:",
+    "section2List": [
+      "surname, first name, patronymic;",
+      "contact phone number, email address;",
+      "company data (for legal entity representatives);",
+      "data entered by the user in forms on the Website;",
+      "technical data: IP address, cookies, information about browser and device."
+    ],
+    "section3Title": "3. Purposes of Processing",
+    "section3Intro": "Personal data is processed exclusively for:",
+    "section3List": [
+      "providing warehouse inventory and audit services;",
+      "communicating with users, including responding to requests and sending newsletters with consent;",
+      "fulfilling contractual obligations;",
+      "complying with the requirements of the legislation of the Republic of Uzbekistan;",
+      "analyzing website traffic and improving Website performance."
+    ],
+    "section4Title": "4. Legal Grounds",
+    "section4Text1": "The legal basis for processing personal data is the user’s consent, expressed when filling out forms on the Website or when using the Website.",
+    "section4Text2": "Processing may also be carried out to comply with the requirements of the legislation of the Republic of Uzbekistan.",
+    "section5Title": "5. Data Transfer and Storage",
+    "section5List": [
+      "Personal data may be transferred to partners and contractors — strictly to fulfill contractual obligations;",
+      "to state authorities — in cases provided by law;",
+      "to third-party services (e.g., hosting providers, analytics systems)."
+    ],
+    "section5Text1": "Cross-border data transfer is possible to countries that ensure adequate protection of personal data (e.g., if using Google, Amazon servers or services).",
+    "section5Text2": "Data is stored until the purposes of processing are achieved, but no longer than necessary.",
+    "section6Title": "6. User Rights",
+    "section6Intro": "The user has the right to:",
+    "section6List": [
+      "receive information about the processing of their data;",
+      "request correction, blocking or deletion of data;",
+      "withdraw consent for processing;",
+      "file a complaint with the authorized state body of the Republic of Uzbekistan."
+    ],
+    "section7Title": "7. Protection Measures",
+    "section7Text": "The Operator takes necessary organizational and technical measures to protect personal data from unauthorized access, alteration, destruction, or distribution.",
+    "section8Title": "8. Changes to the Policy",
+    "section8Text": "The Operator reserves the right to update this Policy. The new version comes into force from the moment it is published on the Website.",
+    "section9Title": "9. Contacts",
+    "section9Intro": "For questions related to the processing of personal data, you can contact us:",
+    "section9List": [
+      "Email: info@inventory.uz",
+      "Phone: +998 (XX) XXX-XX-XX"
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy - Inventory Uzbekistan",
+    "description": "Privacy policy regarding the collection, processing and protection of personal data by Inventory Uzbekistan.",
+    "pageTitle": "Privacy Policy",
+    "pageSubtitle": "Information on the collection, processing and protection of personal data",
+    "effectiveDate": "Effective date: 01.09.2025",
+    "sections": {
+      "1": {
+        "title": "1. General Provisions",
+        "content": [
+          "This Privacy Policy (hereinafter referred to as the “Policy”) regulates the procedure for processing and protecting personal data of users of the website https://www.inventory.uz (hereinafter referred to as the “Website”).",
+          "The operator of personal data is LLC “WS Consulting” (hereinafter referred to as the “Operator”).",
+          "This Policy has been developed in accordance with the Law of the Republic of Uzbekistan “On Personal Data” No. ЗРУ-547 dated July 2, 2019, as well as other applicable regulations."
+        ]
+      },
+      "2": {
+        "title": "2. Personal Data",
+        "content": [
+          "Personal data refers to any information relating to an identified or identifiable user, including:"
+        ],
+        "list": [
+          "surname, first name, patronymic;",
+          "contact phone number, email address;",
+          "company details (for legal entity representatives);",
+          "data entered by the user in forms on the Website;",
+          "technical data: IP address, cookies, information about the browser and device."
+        ]
+      },
+      "3": {
+        "title": "3. Purpose of Processing",
+        "content": [
+          "Personal data is processed exclusively for the following purposes:"
+        ],
+        "list": [
+          "providing warehouse inventory and audit services;",
+          "communicating with users, including responding to requests and sending newsletters with consent;",
+          "fulfillment of contractual obligations;",
+          "compliance with the laws of the Republic of Uzbekistan;",
+          "analyzing website traffic and improving Website performance."
+        ]
+      },
+      "4": {
+        "title": "4. Legal Grounds",
+        "content": [
+          "The basis for processing personal data is the user’s consent, expressed by filling out forms on the Website or using the Website.",
+          "Processing may also be carried out to comply with the requirements of the laws of the Republic of Uzbekistan."
+        ]
+      },
+      "5": {
+        "title": "5. Data Transfer and Storage",
+        "content": [
+          "Personal data may be transferred to partners and contractors — strictly for the fulfillment of contractual obligations;",
+          "to government authorities — in cases provided by law;",
+          "to third-party services (e.g., hosting providers, analytics systems).",
+          "Cross-border transfer of data is possible to countries that ensure adequate protection of personal data (e.g., when using Google, Amazon servers).",
+          "Data is stored until the purposes of processing are achieved, but not longer than necessary."
+        ]
+      },
+      "6": {
+        "title": "6. User Rights",
+        "content": [
+          "The user has the right to:"
+        ],
+        "list": [
+          "obtain information about the processing of their data;",
+          "request correction, blocking, or deletion of data;",
+          "withdraw their consent to processing;",
+          "file a complaint with the authorized state body of the Republic of Uzbekistan."
+        ]
+      },
+      "7": {
+        "title": "7. Security Measures",
+        "content": [
+          "The Operator takes necessary organizational and technical measures to protect personal data from unauthorized access, alteration, destruction, or distribution."
+        ]
+      },
+      "8": {
+        "title": "8. Changes to the Policy",
+        "content": [
+          "The Operator reserves the right to update this Policy. The new version enters into force from the moment it is published on the Website."
+        ]
+      },
+      "9": {
+        "title": "9. Contacts",
+        "content": [
+          "For questions related to the processing of personal data, you can contact us:"
+        ],
+        "list": [
+          "Email: info@inventory.uz",
+          "Phone: +998 (XX) XXX-XX-XX"
+        ]
+      }
+    }
   }
 }
