@@ -47,7 +47,7 @@ export default function NewsHome() {
                   {item.author}
                 </span>
               </div>
-              <h3 className="font-semibold text-lg mb-2 group-hover:text-[#aa60fa] line-clamp-2">
+              <h3 className="font-semibold text-lg mb-2 group-hover:text-orange-400 line-clamp-2">
                 {item.title}
               </h3>
               <p className="text-gray-600 mb-3 line-clamp-3">
@@ -57,7 +57,7 @@ export default function NewsHome() {
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-[#aa60fa]/70 group-hover:bg-[#aa60fa] transition-all duration-200 text-white px-2 py-1 text-xs rounded"
+                    className="bg-orange-400/70 group-hover:bg-orange-400 transition-all duration-200 text-white px-2 py-1 text-xs rounded"
                   >
                     {tag}
                   </span>
@@ -65,7 +65,7 @@ export default function NewsHome() {
               </div>
               <Link
                 href={`/${locale}/news/${item.slug}`}
-                className="text-purple-600 flex items-center gap-1 font-medium"
+                className="text-orange-400 flex items-center gap-1 font-medium"
               >
                 {t("read")} <ArrowRight className="w-4 h-4" />
               </Link>
@@ -79,7 +79,7 @@ export default function NewsHome() {
             <Button
               size="lg"
               variant="outline"
-              className="group bg-transparent hover:bg-[#aa60fa] border-[#aa60fa] text-[#aa60fa] hover:text-white transition-all duration-200"
+              className="group bg-transparent hover:bg-orange-400 border-orange-400 text-orange-400 hover:text-white transition-all duration-200"
             >
               {t("news")}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

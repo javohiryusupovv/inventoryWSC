@@ -27,15 +27,15 @@ export default function Contact() {
               {/* Phone */}
               <Card className="group hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-[#aa60fa]/20 transition-colors">
-                    <Phone className="w-6 h-6 text-[#aa60fa]" />
+                  <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
+                    <Phone className="w-6 h-6 text-orange-400" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">
                     {p("contactLabels.phone")}
                   </h3>
                   <a
                     href="tel:+998916440702"
-                    className="text-muted-foreground hover:text-[#aa60fa] transition-colors"
+                    className="text-muted-foreground hover:text-orange-400 transition-colors"
                   >
                     +998 (91) 644 07 02
                   </a>
@@ -45,13 +45,13 @@ export default function Contact() {
               {/* Email */}
               <Card className="group hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-[#aa60fa]/20 transition-colors">
-                    <Mail className="w-6 h-6 text-[#aa60fa]" />
+                  <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
+                    <Mail className="w-6 h-6 text-orange-400" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">{p("contactLabels.email")}</h3>
                   <a
                     href="mailto:info@inventory.uz"
-                    className="text-muted-foreground hover:text-[#aa60fa] transition-colors"
+                    className="text-muted-foreground hover:text-orange-400 transition-colors"
                   >
                     info@inventory.uz
                   </a>
@@ -63,8 +63,8 @@ export default function Contact() {
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center group-hover:bg-[#aa60fa]/20 transition-colors">
-                    <MapPin className="w-6 h-6 text-[#aa60fa]" />
+                  <div className="w-[55px] h-[50px] bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
+                    <MapPin className="w-6 h-6 text-orange-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">
@@ -85,8 +85,8 @@ export default function Contact() {
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center group-hover:bg-[#aa60fa]/20 transition-colors">
-                    <Clock className="w-6 h-6 text-[#aa60fa]" />
+                  <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
+                    <Clock className="w-6 h-6 text-orange-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">
@@ -103,12 +103,12 @@ export default function Contact() {
             </Card>
 
             {/* Telegram */}
-            <Card className="bg-[#aa60fa]/5 border-[#aa60fa]/20 group hover:shadow-lg transition-all duration-300">
+            <Card className="bg-orange-400/5 border-orange-400/20 group hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center group-hover:bg-[#aa60fa]/20 transition-colors">
-                      <MessageCircle className="w-6 h-6 text-[#aa60fa]" />
+                    <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
+                      <MessageCircle className="w-6 h-6 text-orange-400" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">

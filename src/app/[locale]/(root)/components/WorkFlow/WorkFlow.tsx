@@ -81,7 +81,7 @@ export default function WorkFlow() {
                     {steps.map((step, index) => (
                         <div key={index} className="flex items-center space-x-4">
                             {/* Step Number */}
-                            <div className="w-12 h-12 bg-[#aa60fa] rounded-full flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 bg-orange-400 rounded-full flex items-center justify-center flex-shrink-0">
                                 <span className="text-white font-bold">{index + 1}</span>
                             </div>
 
@@ -90,7 +90,7 @@ export default function WorkFlow() {
                                 <CardContent className="p-4">
                                     <div className="flex items-center justify-between">
                                         <h3 className="font-semibold text-foreground text-balance">{step.title}</h3>
-                                        <CheckCircle className="w-5 h-5 text-[#aa60fa] flex-shrink-0" />
+                                        <CheckCircle className="w-5 h-5 text-orange-400 flex-shrink-0" />
                                     </div>
                                 </CardContent>
                             </Card>
@@ -103,22 +103,22 @@ export default function WorkFlow() {
                     <h3 className="text-2xl font-bold text-foreground text-center mb-8">{s("approachAdvantages")}</h3>
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <CheckCircle className="w-6 h-6 text-[#aa60fa]" />
+                            <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <CheckCircle className="w-6 h-6 text-orange-400" />
                             </div>
                             <h4 className="font-semibold text-foreground mb-2">{s("transparency.title")}</h4>
                             <p className="text-sm text-muted-foreground">{s("transparency.desc")}</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <CheckCircle className="w-6 h-6 text-[#aa60fa]" />
+                            <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <CheckCircle className="w-6 h-6 text-orange-400" />
                             </div>
                             <h4 className="font-semibold text-foreground mb-2">{s("quality.title")}</h4>
                             <p className="text-sm text-muted-foreground">{s("quality.desc")}</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-[#aa60fa]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                <CheckCircle className="w-6 h-6 text-[#aa60fa]" />
+                            <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <CheckCircle className="w-6 h-6 text-orange-400" />
                             </div>
                             <h4 className="font-semibold text-foreground mb-2">{s("result.title")}</h4>
                             <p className="text-sm text-muted-foreground">{s("result.desc")}</p>

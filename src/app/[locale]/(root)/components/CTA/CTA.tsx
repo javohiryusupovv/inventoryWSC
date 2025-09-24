@@ -29,7 +29,7 @@ export default function CTA() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="flex items-center w-full !bg-[#aa60fa] text-white hover:!bg-[#aa60fa]/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
+                    className="flex items-center w-full !bg-orange-400 text-white hover:!bg-orange-400/80 transition-all duration-200 hover:!text-white space-x-2 text-lg px-8 py-6 bg-transparent"
                   >
                     <MessageCircle className="w-5 h-5" />
                     <span>{t("telegram")}</span>
@@ -41,19 +41,19 @@ export default function CTA() {
               {/* Trust Indicators */}
               <div className="grid md:grid-cols-3 grid-cols-2 gap-8 pt-8 border-t border-border">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#aa60fa] mb-1">
+                  <div className="text-2xl font-bold text-orange-400 mb-1">
                     {t("callToAction.responseTime.value")}
                   </div>
                   <p className="text-sm text-muted-foreground">{t("callToAction.responseTime.label")}</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#aa60fa] mb-1">
+                  <div className="text-2xl font-bold text-orange-400 mb-1">
                     {t("callToAction.responseTime.value")}
                   </div>
                   <p className="text-sm text-muted-foreground">{t("callToAction.responseTime.label")}</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#aa60fa] mb-1">
+                  <div className="text-2xl font-bold text-orange-400 mb-1">
                     {t("callToAction.responseTime.value")}
                   </div>
                   <p className="text-sm text-muted-foreground">
