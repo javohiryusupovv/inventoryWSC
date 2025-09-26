@@ -10,9 +10,12 @@ interface NewsItem {
   id: number;
   image: StaticImageData;
   date: string;
-  title: string;
-  description: string;
-  tags: string[];
+  title_uz: string;
+  title_en: string;
+  title_ru: string;
+  description_uz: string;
+  description_ru: string;
+  description_en: string;
   slug: string;
   content_ru: string;
   content_en: string;
@@ -24,10 +27,12 @@ export const newsData: NewsItem[] = [
     id: 1,
     image: Post1,
     date: "26.09.2025",
-    title: "5 ошибок на складе, которые стоят вам денег (и как их убрать)",
-    description:
-      "Ошибки учёта и инвентаризации могут «съедать» до 15–20% складской маржи. Пять практичных шагов — от стандартизации SKU до циклической инвентаризации — чтобы вернуть контроль и сократить потери.",
-    tags: ["склад", "инвентаризация", "учёт", "логистика"],
+    title_uz: "Omborda 5 xato, ular sizga pulga tushadi (va ularni qanday bartaraf etish)",
+    title_en: "5 Warehouse Mistakes That Cost You Money (and How to Fix Them)",
+    title_ru: "5 ошибок на складе, которые стоят вам денег (и как их убрать)",
+    description_uz: "Hisob-kitob va inventarizatsiya xatolari ombor marjasining 15–20% gachaini “yeyishi” mumkin. Nazoratni tiklash va yo‘qotishlarni kamaytirish uchun besh amaliy qadam — SKU standartlashtirishdan tsiklik inventarizatsiyagacha",
+    description_ru: "Ошибки учёта и инвентаризации могут «съедать» до 15–20% складской маржи. Пять практичных шагов — от стандартизации SKU до циклической инвентаризации — чтобы вернуть контроль и сократить потери.",
+    description_en: "Accounting and inventory mistakes can eat up to 15–20% of your warehouse margin. Five practical steps — from SKU standardization to cyclical inventory — to regain control and reduce losses.",
     slug: "5-oshibok-na-sklade-kotorye-stoyat-deneg",
     content_ru: `Знаете, какой скрытый враг может съедать до 15–20% вашей складской маржи в Узбекистане? Это ошибки учёта и инвентаризации. Каждая недостача или пересортица — это не просто лишняя цифра в отчёте, а реальные деньги, потерянные за счёт срывов поставок, замороженного оборотного капитала и падения доверия клиентов.
 
@@ -261,10 +266,12 @@ Inventory.uz helps companies organize accounting and conduct turnkey inventory w
     id: 2,
     image: Post2,
     date: "26.09.2025",
-    title: "Инвентаризация склада: зачем бизнесу это сейчас",
-    description:
-      "Почему регулярная инвентаризация в Узбекистане — это не формальность, а способ сохранить прибыль, снизить риски и ускорить складские процессы.",
-    tags: ["инвентаризация", "склад", "логистика"],
+    title_uz: "Ombor auditi va inventarizatsiya: farqi nima va O‘zbekistondagi biznes qaysisini tanlashi kerak?",
+    title_en: "Warehouse Audit vs Inventory: What's the Difference and What Should Businesses Choose in Uzbekistan?",
+    title_ru: "Аудит склада и инвентаризация: в чём разница и что выбрать бизнесу в Узбекистане)",
+    description_uz: "Biznesda ko‘pincha ikki tushuncha — inventarizatsiya va ombor auditi aralashtiriladi. Ular bir xildek ko‘rinadi: mahsulotlarni hisoblash va farqlarni aniqlash. Ammo amalda bu turli vositalar bo‘lib, har birining o‘z maqsadi, chuqurligi va natijasi bor.",
+    description_ru: "В бизнес-среде часто путают два понятия — инвентаризация и аудит склада. Кажется, что это одно и то же: пересчёт товаров и выявление расхождений. Но на практике это разные инструменты, и у каждого — своя цель, глубина и результат.",
+    description_en: "In business, two concepts are often confused — inventory and warehouse audit. They may seem the same: counting goods and identifying discrepancies. But in practice, they are different tools, each with its own purpose, depth, and outcome.",
     slug: "invetarizaciya-sklada-zachem-biznesu",
     content_ru: `«Зачем тратить деньги и время на инвентаризацию, если на складе и так всё работает?» — вопрос понятный. Но практика в Узбекистане показывает обратное: именно отсутствие регулярной инвентаризации чаще всего и съедает прибыль — через недостачи, пересортицу и замороженный оборотный капитал.
 
@@ -425,11 +432,12 @@ The numbers given are benchmarks based on Inventory.uz projects and industry sta
     id: 3,
     image: Post3, // rasmni o'zingiz qo'yasiz
     date: "2025-09-26",
-    title:
-      "Аудит склада и инвентаризация: в чём разница и что выбрать бизнесу в Узбекистане",
-    description:
-      "В бизнес-среде часто путают два понятия — инвентаризация и аудит склада. Кажется, что это одно и то же: пересчёт товаров и выявление расхождений. Но на практике это разные инструменты, и у каждого — своя цель, глубина и результат.",
-    tags: ["Склад", "Аудит", "Инвентаризация", "Inventory.uz"],
+    title_uz: "Inventarizatsiyani qanchalik tez-tez o‘tkazish kerak: yiliga bir marta yoki tsiklik tarzda?",
+    title_en: "Warehouse Audit vs Inventory: What's the Difference and What Should Businesses Choose in Uzbekistan?",
+    title_ru: "Аудит склада и инвентаризация: в чём разница и что выбрать бизнесу в Узбекистане",
+    description_uz:"Biznes egalari ko‘pincha shunday savolga duch keladi: yil oxirida bir marta katta inventarizatsiya yetarlimi yoki muntazam (tsiklik) hisob-kitoblarni joriy qilish kerakmi?",
+    description_ru: "В бизнес-среде часто путают два понятия — инвентаризация и аудит склада. Кажется, что это одно и то же: пересчёт товаров и выявление расхождений. Но на практике это разные инструменты, и у каждого — своя цель, глубина и результат.",
+    description_en: "In business, two concepts are often confused — inventory and warehouse audit. They may seem the same: counting goods and identifying discrepancies. But in practice, they are different tools, each with its own purpose, depth, and outcome.",
     slug: "audit-vs-inventarizatsiya",
     content_ru: `Аудит склада и инвентаризация: в чём разница и что выбрать бизнесу в Узбекистане
 
@@ -606,10 +614,12 @@ The figures provided are based on Inventory.uz project experience and industry b
     id: 4,
     image: Post4, // o'zingiz mos rasm qo'yasiz
     date: "2025-09-26",
-    title: "Как часто проводить инвентаризацию: раз в год или циклически?",
-    description:
-      "Владелец бизнеса часто сталкивается с дилеммой: достаточно ли одной большой инвентаризации в конце года или стоит внедрить регулярные (циклические) пересчёты?",
-    tags: ["Инвентаризация", "Склад", "ABC/XYZ", "Inventory.uz"],
+    title_uz: "Inventarizatsiyani qanchalik tez-tez o‘tkazish kerak: yiliga bir marta yoki tsiklik tarzda?",
+  title_en: "How Often Should You Conduct Inventory: Once a Year or Cyclically?",
+  title_ru: "Как часто проводить инвентаризацию: раз в год или циклически?",
+  description_uz: "Biznes egalari ko‘pincha shunday savolga duch keladi: yil oxirida bir marta katta inventarizatsiya yetarlimi yoki muntazam (tsiklik) hisob-kitoblarni joriy qilish kerakmi?",
+  description_ru: "Владелец бизнеса часто сталкивается с дилеммой: достаточно ли одной большой инвентаризации в конце года или стоит внедрить регулярные (циклические) пересчёты?",
+  description_en: "Business owners often face the dilemma: is one big inventory at the end of the year enough, or should regular (cyclical) counts be implemented?",
     slug: "inventarizatsiya-kak-chasto",
     content_ru: `Как часто проводить инвентаризацию: раз в год или циклически?
 
@@ -810,10 +820,12 @@ Inventory.uz helps companies implement both one-time and cyclical counts — tur
     id: 5,
     image: Post5, // kerakli rasmni qo'ying
     date: "2025-09-26",
-    title: "Сколько стоит инвентаризация: из чего складывается цена?",
-    description:
-      "Разбираем, от чего зависит цена инвентаризации склада в Узбекистане: размер, подготовка, персонал, время и формат услуги.",
-    tags: ["Инвентаризация", "Стоимость", "Склад", "Inventory.uz"],
+    title_uz:  "Inventarizatsiya qancha turadi: narx nimalardan iborat?",
+  title_en: "How Much Does Inventory Cost: What Makes Up the Price?",
+  title_ru: "Сколько стоит инвентаризация: из чего складывается цена?",
+  description_uz: "O‘zbekiston omborlarida inventarizatsiya narxi nimalarga bog‘liq: hajmi, tayyorgarlik, xodimlar, vaqt va xizmat formati haqida tushuntiramiz.",
+  description_ru: "Разбираем, от чего зависит цена инвентаризации склада в Узбекистане: размер, подготовка, персонал, время и формат услуги.",
+  description_en: "We explain what determines the cost of warehouse inventory in Uzbekistan: size, preparation, staff, time, and service format.",
     slug: "inventarizatsiya-stoimost",
     content_ru: `Сколько стоит инвентаризация: из чего складывается цена?
 
@@ -1022,18 +1034,14 @@ Inventory.uz offers flexible formats: from 24-hour express to regular outsourcin
   {
     id: 6,
     image: Post6,
-    title: "Кому нужна инвентаризация: малому, среднему или крупному бизнесу?",
+    title_uz: "Kimga inventarizatsiya kerak: kichik, o‘rta yoki yirik biznes?",
+  title_en: "Who Needs Inventory: Small, Medium, or Large Business?",
+  title_ru: "Кому нужна инвентаризация: малому, среднему или крупному бизнесу?",
+  description_uz: "Inventarizatsiya faqat logistika gigantlari uchun emas. O‘zbekistonlik kichik, o‘rta va yirik biznes turli yo‘qotish xavflari bilan duch keladi. Inventarizatsiya nima uchun kerakligini tushuntiramiz.",
+  description_ru: "Инвентаризация — это не только для гигантов логистики. Малый, средний и крупный бизнес в Узбекистане сталкиваются с разными рисками потерь. Разбираем, зачем нужна инвентаризация каждому.",
+  description_en: "Inventory is not just for logistics giants. Small, medium, and large businesses in Uzbekistan face different risks of loss. Let's explore why inventory is necessary for everyone.",
     date: "2025-09-26",
     slug: "komu-nuzhna-inventarizatsiya",
-    tags: [
-      "инвентаризация",
-      "малый бизнес",
-      "средний бизнес",
-      "крупный бизнес",
-      "Узбекистан",
-    ],
-    description:
-      "Инвентаризация — это не только для гигантов логистики. Малый, средний и крупный бизнес в Узбекистане сталкиваются с разными рисками потерь. Разбираем, зачем нужна инвентаризация каждому.",
     content_ru: `Инвентаризация для бизнеса разных масштабов в Узбекистане
 
 Многие владельцы думают, что инвентаризация — это «дело больших складов». На самом деле ошибки учёта одинаково бьют и малые, и крупные компании. Разница только в масштабе потерь.
