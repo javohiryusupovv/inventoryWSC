@@ -1,15 +1,18 @@
-import { Button } from "@/app/[locale]/(root)/components/ui/button"
-import { Calendar, User, ArrowLeft, Share2 } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
-import { notFound } from "next/navigation"
-import type { Metadata } from "next"
-import { newsData } from "../../../../../../constants/page"
+import { Button } from "@/app/[locale]/(root)/components/ui/button";
+import { Calendar, User, ArrowLeft, Share2 } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { newsData } from "../../../../../../constants/page";
+import ReactMarkdown from "react-markdown";
 
-type ArticlePageParams = { params: Promise<{ slug: string, locale: string }> }
+type ArticlePageParams = { params: Promise<{ slug: string; locale: string }> };
 
 // SEO metadata slug bo‘yicha
-export async function generateMetadata({ params }: ArticlePageParams): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ArticlePageParams): Promise<Metadata> {
   const { slug } = await params; // ✅ await emas
   const article = newsData.find((item) => item.slug === slug);
 
@@ -43,12 +46,11 @@ export async function generateMetadata({ params }: ArticlePageParams): Promise<M
   };
 }
 
-
 export default async function Page({ params }: ArticlePageParams) {
   const { slug, locale } = await params;
-  const article = newsData.find((item) => item.slug === slug)
+  const article = newsData.find((item) => item.slug === slug);
 
-  if (!article) return notFound()
+  if (!article) return notFound();
 
   return (
     <main className="min-h-screen">
@@ -98,20 +100,19 @@ export default async function Page({ params }: ArticlePageParams) {
           </div>
 
           {/* Article Content */}
-          <div className="prose prose-lg pb-10 max-w-none">
-            <div className="text-foreground leading-relaxed">
-              <p className="mb-5">
-                Здесь будет полный контент статьи с подробным описанием темы, анализом ситуации,
-                практическими рекомендациями и выводами.
-              </p>
-              <p>
-                Пока что в <code>newsData</code> у нас только описание (<code>description</code>),
-                но вы можете добавить отдельное поле <code>content</code>, если хотите хранить полные тексты.
-              </p>
+          <div className="text-foreground leading-relaxed">
+            <div className="prose xl:prose-xl max-w-none dark:prose-invert">
+              <ReactMarkdown>
+                {locale === "uz"
+                  ? article.content_uz
+                  : locale === "ru"
+                  ? article.content_ru
+                  : article.content_en}
+              </ReactMarkdown>
             </div>
           </div>
         </div>
       </article>
     </main>
-  )
+  );
 }

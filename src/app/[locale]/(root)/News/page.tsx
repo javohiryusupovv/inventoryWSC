@@ -9,7 +9,7 @@ export default function News() {
   const news = newsData;
   const t = useTranslations("HomePage")
   return (
-    <section className="py-20 pt-32 bg-background">
+    <section className="py-14 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
@@ -40,12 +40,8 @@ export default function News() {
                   <Calendar className="w-4 h-4" />
                   {item.date}
                 </span>
-                <span className="flex items-center gap-1">
-                  <User className="w-4 h-4" />
-                  {item.author}
-                </span>
               </div>
-              <h3 className="font-semibold text-lg mb-2 group-hover:text-[#aa60fa] line-clamp-2">
+              <h3 className="font-semibold text-lg mb-2 group-hover:text-orange-400 line-clamp-2">
                 {item.title}
               </h3>
               <p className="text-gray-600 mb-3 line-clamp-3">
@@ -55,7 +51,7 @@ export default function News() {
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-[#aa60fa] text-white px-2 py-1 text-xs rounded"
+                    className="bg-orange-400 text-white px-2 py-1 text-xs rounded"
                   >
                     {tag}
                   </span>
@@ -63,7 +59,7 @@ export default function News() {
               </div>
               <Link
                 href={`/${locale}/news/${item.slug}`}
-                className="text-purple-600 flex items-center gap-1 font-medium"
+                className="text-orange-600 flex items-center gap-1 font-medium"
               >
                 {t("read")} <ArrowRight className="w-4 h-4" />
               </Link>

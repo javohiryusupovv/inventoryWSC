@@ -42,10 +42,6 @@ export default function NewsHome() {
                   <Calendar className="w-4 h-4" />
                   {item.date}
                 </span>
-                <span className="flex items-center gap-1">
-                  <User className="w-4 h-4" />
-                  {item.author}
-                </span>
               </div>
               <h3 className="font-semibold text-lg mb-2 group-hover:text-orange-400 line-clamp-2">
                 {item.title}
