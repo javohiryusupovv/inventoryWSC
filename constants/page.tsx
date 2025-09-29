@@ -98,7 +98,7 @@ export const newsData: NewsItem[] = [
 - T0: остановите движения, выдайте задания, считайте по маршрутам.
 - T+24 ч: сверка, акты, корректировки, обновление KPI.
 
-📥 Скачать PDF-чек-лист «Инвентаризация за 24 часа»: /files/inventarizaciya-24h.pdf
+[📥 Скачать PDF-чек-лист «Инвентаризация за 24 часа»](/24h_Inventory.pdf)
 
 Почему это важно именно в Узбекистане
 - Налоговый учёт: правильная инвентаризация — требование Налогового кодекса РУз.
@@ -174,7 +174,7 @@ Mini-gid: «24 soat ichida inventarizatsiya»
 - T0: harakatlarni to‘xtatish, vazifalarni berish, marshrut bo‘yicha hisoblash.
 - T+24 soat: tekshiruv, aktlar, tuzatishlar, KPI yangilash.
 
-📥 PDF chek-listni yuklab olish «24 soat ichida inventarizatsiya»: /files/inventarizaciya-24h.pdf
+[📥 PDF-chek-listni yuklab oling: «24 soatda inventarizatsiya»](/24h_Inventory.pdf)
 
 Nega aynan O‘zbekistonda muhim
 - Soliq hisoboti: to‘g‘ri inventarizatsiya — O‘zbekiston Soliq kodeksi talabidir.
@@ -250,7 +250,7 @@ Mini-guide: 'Inventory in 24 hours'
 - T0: stop movements, assign tasks, count by routes.
 - T+24h: reconciliation, acts, adjustments, KPI updates.
 
-📥 Download PDF checklist 'Inventory in 24 hours': /files/inventarizaciya-24h.pdf
+[📥 Download PDF Checklist "Inventory in 24 Hours"](/24h_Inventory.pdf)
 
 Why it matters in Uzbekistan
 - Tax accounting: proper inventory — requirement of Uzbekistan Tax Code.
@@ -280,50 +280,50 @@ Inventory.uz helps companies organize accounting and conduct turnkey inventory w
 1) Инвентаризация = деньги под контролем
 Недостачи и пересортица напрямую бьют по марже.
 Ошибки учёта — это «мертвые» деньги в запасах.
-💡 По нашим проектам, регулярная инвентаризация снижает годовые потери на 10–20%.
-    
-    2) Это требование закона РУз
-    Налоговый учёт требует корректного отражения фактических остатков перед годовой отчётностью.
-    Разрывы между бухгалтерией и фактом ведут к штрафам и спорам с контролирующими органами.
-    
-    3) Защита от воровства и ошибок персонала
-    Регулярный пересчёт уменьшает возможности для манипуляций.
-    Компании фиксируют падение «человеческого фактора» на 30–40%.
-    
-    4) Быстрые процессы и довольные клиенты
-    Точные остатки = быстрый поиск, меньше возвратов, выше SLA.
-    Адресное хранение и циклические пересчёты ускоряют приёмку и отбор.
-    
-    5) База для автоматизации и роста
-    Без «чистой базы» внедрение WMS/маркетплейсов превращается в хаос.
-    Инвентаризация — фундамент цифровизации.
-    
-    Мини-кейс: склад в Ташкенте
-    Компания с оборотом ~2 млн USD провела полную инвентаризацию с Inventory.uz.
-    До: недостача 8%, хаос в ячейках, споры склад↔бухгалтерия.
-    После: недостача 2,5%, адресный учёт, время отбора −35%.
-    Экономия: десятки тысяч долларов в первый год.
-    
-    Что даёт бизнесу регулярная инвентаризация
-    Финансы: сохранённая маржа, меньше потерь.
-    Юридически: снижение налоговых рисков.
-    Операционно: быстрее процессы, меньше ошибок.
-    Стратегически: готовность к масштабированию и IT-проектам.
-    
-    FAQ
-    Мы маленькая компания. Это обязательно?
-    Да. Даже склад на 300–500 SKU может терять 5–10% оборота на ошибках.
-    
-    Как часто проводить инвентаризацию?
-    Минимум — раз в год перед отчётностью. Оптимально — циклически по ABC/XYZ (A — еженедельно, B — ежемесячно, C — ежеквартально). Подробнее см. статью «5 ошибок на складе…».
-    
-    Можно без остановки работы?
-    Да, при зонировании и «окнах тишины». Для запуска/закрытия года может понадобиться краткая остановка.
-    
-    📥 Чек-лист: как подготовить склад к инвентаризации без остановки работы
-    
-    Приведённые цифры — ориентиры по опыту проектов Inventory.uz и отраслевым бенчмаркам; фактические результаты зависят от специфики склада.
-    `,
+💡По нашим проектам, регулярная инвентаризация снижает годовые потери на 10–20%.
+
+2) Это требование закона РУз
+Налоговый учёт требует корректного отражения фактических остатков перед годовой отчётностью.
+Разрывы между бухгалтерией и фактом ведут к штрафам и спорам с контролирующими органами.
+
+3) Защита от воровства и ошибок персонала
+Регулярный пересчёт уменьшает возможности для манипуляций.
+Компании фиксируют падение «человеческого фактора» на 30–40%.
+
+4) Быстрые процессы и довольные клиенты
+Точные остатки = быстрый поиск, меньше возвратов, выше SLA.
+Адресное хранение и циклические пересчёты ускоряют приёмку и отбор.
+
+5) База для автоматизации и роста
+Без «чистой базы» внедрение WMS/маркетплейсов превращается в хаос.
+Инвентаризация — фундамент цифровизации.
+
+Мини-кейс: склад в Ташкенте
+Компания с оборотом ~2 млн USD провела полную инвентаризацию с Inventory.uz.
+До: недостача 8%, хаос в ячейках, споры склад↔бухгалтерия.
+После: недостача 2,5%, адресный учёт, время отбора −35%.
+Экономия: десятки тысяч долларов в первый год.
+
+Что даёт бизнесу регулярная инвентаризация
+Финансы: сохранённая маржа, меньше потерь.
+Юридически: снижение налоговых рисков.
+Операционно: быстрее процессы, меньше ошибок.
+Стратегически: готовность к масштабированию и IT-проектам.
+
+FAQ
+Мы маленькая компания. Это обязательно?
+Да. Даже склад на 300–500 SKU может терять 5–10% оборота на ошибках.
+
+Как часто проводить инвентаризацию?
+Минимум — раз в год перед отчётностью. Оптимально — циклически по ABC/XYZ (A — еженедельно, B — ежемесячно, C — ежеквартально). Подробнее см. статью «5 ошибок на складе…».
+
+Можно без остановки работы?
+Да, при зонировании и «окнах тишины». Для запуска/закрытия года может понадобиться краткая остановка.
+
+[📥 Чек-лист: как подготовить склад к инвентаризации без остановки работы](/Nonstop_Inventory.pdf)
+
+Приведённые цифры — ориентиры по опыту проектов Inventory.uz и отраслевым бенчмаркам; фактические результаты зависят от специфики склада.
+`,
 
     content_uz: `«Nega omborda hammasi ishlayotgan bo‘lsa ham, inventarizatsiyaga vaqt va pul sarflash kerak?» — savol tushunarli. Ammo O‘zbekistondagi amaliyot aksini ko‘rsatadi: aynan muntazam inventarizatsiyaning yo‘qligi eng ko‘p foydani yeyadi — yetishmovchilik, noto‘g‘ri tartib va muzlatilgan aylanma mablag‘ orqali.
     
@@ -372,7 +372,7 @@ Kamida — yillik hisobotdan oldin. Optimal — ABC/XYZ bo‘yicha siklik (A —
 Ishni to‘xtatmasdan bo‘ladimi?
 Ha, zonalash va “tinchlik oynalari” bilan. Yilni boshlash/yopish uchun qisqa to‘xtash kerak bo‘lishi mumkin.
 
-📥 Chek-list: ishni to‘xtatmasdan omborni inventarizatsiyaga tayyorlash
+[📥 Chek-list: Omborni inventarizatsiyaga tayyorlash (ish jarayonini to‘xtatmasdan)](/Audit_10Questions.pdf)
 
 Keltirilgan raqamlar — Inventory.uz loyihalari va sanoat benchmarklariga asoslangan; haqiqiy natijalar ombor xususiyatiga bog‘liq.
     `,
@@ -423,7 +423,7 @@ Minimum — once a year before reporting. Optimal — cyclically by ABC/XYZ (A �
 Can it be done without stopping work?
 Yes, with zoning and “quiet windows.” Short stoppage may be needed for year start/end.
 
-📥 Checklist: how to prepare a warehouse for inventory without stopping work
+[📥 Checklist: How to Prepare a Warehouse for Inventory Without Stopping Operations](/Audit_10Questions.pdf) 
 
 The numbers given are benchmarks based on Inventory.uz projects and industry standards; actual results depend on warehouse specifics.
     `,
@@ -474,7 +474,7 @@ The numbers given are benchmarks based on Inventory.uz projects and industry sta
 - При проблемах с эффективностью (медленный отбор, излишки, споры с бухгалтерией).
 - При переходе на маркетплейсы и интеграцию с WMS.
 
-📥 Чек-лист «10 вопросов: готов ли ваш склад к аудиту?»
+[📥 Чек-лист «10 вопросов: готов ли ваш склад к аудиту?»](/Audit_10Questions.pdf)
 
 FAQ
 Можно ли делать только аудит без инвентаризации?
@@ -531,7 +531,7 @@ Audit qachon kerak
 - Samardorlik muammolarida (sekin tanlash, ortiqcha, buxgalteriya bilan bahslar).
 - Marketpleysga o‘tishda va WMS integratsiyasida.
 
-📥 Chek-list «10 savol: omboringiz auditga tayyormi?»
+[📥 Chek-list «10 savol: Omboringiz auditga tayyormi?»](/Audit_10Questions.pdf)
 
 FAQ
 Faqat audit qilish mumkinmi, inventarizatsiyasiz?
@@ -588,7 +588,7 @@ When Audit is Needed
 - When there are efficiency problems (slow picking, excess, accounting disputes).
 - When transitioning to marketplaces and WMS integration.
 
-📥 Checklist: “10 Questions: Is Your Warehouse Ready for an Audit?”
+[📥 Checklist "10 Questions: Is Your Warehouse Ready for an Audit?"](/Audit_10Questions.pdf)
 
 FAQ
 Can you do only an audit without inventory?
@@ -678,7 +678,7 @@ FAQ
 Что нужно для внедрения циклической?  
 Адресная система (хотя бы в Excel) и дисциплина. Можно начать с бумажных ведомостей и постепенно наращивать автоматизацию.
 
-📥 Календарь инвентаризаций ABC/XYZ на год
+[📥 Календарь инвентаризаций ABC/XYZ на год](/Inventory_Calendar.pdf)
 
 Итог
 Раз в год — обязательство. Циклическая — инструмент контроля и развития. В сочетании они дают бизнесу в Узбекистане максимум: точный учёт, меньше потерь и готовность к масштабированию.
@@ -743,7 +743,7 @@ Ha. Hatto 500 SKU bo‘lgan ombor oyiga 20 ta eng muhim tovarni hisoblay oladi.
 Siklikni joriy qilish uchun nima kerak?  
 Adres tizimi (kamida Excelda) va intizom. Boshlash uchun qog‘oz varaqlari bilan top-20 tovarni hisoblash va asta-sekin avtomatlashtirishni oshirish mumkin.
 
-📥 ABC/XYZ inventarizatsiya taqvimi yiliga
+[📥 Yil davomida ABC/XYZ inventarizatsiya kalendari](/Inventory_Calendar.pdf)
 
 Xulosa
 Yiliga bir marta — majburiyat. Siklik — nazorat va rivojlanish vositasi. Birgalikda ular O‘zbekistondagi biznesga aniq hisob-kitob, kamroq yo‘qotish va kengayishga tayyorgarlik beradi.
@@ -808,7 +808,7 @@ Yes. Even a 500 SKU warehouse can count top-20 items monthly.
 What is needed to implement cyclical?  
 Addressing system (at least in Excel) and discipline. You can start with paper sheets counting top-20 items, gradually increasing automation.
 
-📥 ABC/XYZ Inventory Calendar for the Year
+[📥 ABC/XYZ Inventory Calendar for the Year](/Inventory_Calendar.pdf)
 
 Conclusion
 Annual — mandatory. Cyclical — a tool for control and growth. Together they give businesses in Uzbekistan maximum benefit: accurate accounting, fewer losses, and readiness for scaling.
@@ -1046,7 +1046,7 @@ Inventory.uz offers flexible formats: from 24-hour express to regular outsourcin
 
 Многие владельцы думают, что инвентаризация — это «дело больших складов». На самом деле ошибки учёта одинаково бьют и малые, и крупные компании. Разница только в масштабе потерь.
 
-## Малый бизнес (до 500–1 000 SKU)
+### Малый бизнес (до 500–1 000 SKU)
 **Ситуации:**
 - Учёт в Excel или 1С «для галочки».
 - Склад = несколько комнат или небольшой павильон.
@@ -1058,7 +1058,7 @@ Inventory.uz offers flexible formats: from 24-hour express to regular outsourcin
 
 📌 Пример: Магазин бытовой техники в Кашкадарье потерял 25 млн сумов из-за учётных ошибок.
 
-## Средний бизнес (1 000–10 000 SKU)
+### Средний бизнес (1 000–10 000 SKU)
 **Ситуации:**
 - Склад 500–3 000 м².
 - Несколько смен и кладовщиков.
@@ -1070,7 +1070,7 @@ Inventory.uz offers flexible formats: from 24-hour express to regular outsourcin
 
 📌 Пример: Дистрибьютор FMCG в Ташкенте снизил недостачу с 4% до 1,5% при циклической инвентаризации А-группы.
 
-## Крупный бизнес (10 000+ SKU)
+### Крупный бизнес (10 000+ SKU)
 **Ситуации:**
 - Площадь >5 000 м².
 - Адресное хранение, WMS, интеграция с ERP и маркетплейсами.
@@ -1081,19 +1081,19 @@ Inventory.uz offers flexible formats: from 24-hour express to regular outsourcin
 
 📌 Пример: Дистрибьютор потерял $120 000, после аудита и корректировки процессов убытки сократились вдвое.
 
-## Общая закономерность
+### Общая закономерность
 - Малый бизнес: рискует каждым товаром.  
 - Средний бизнес: системные ошибки и конфликты.  
 - Крупный бизнес: масштабные потери и репутация.
 
 💡 Вывод: инвентаризация нужна всем. Формат зависит от размера бизнеса.
 
-## Рекомендации по формату
+### Рекомендации по формату
 - Малый: ежеквартальная выборка ключевых товаров.  
 - Средний: циклическая ABC-инвентаризация, А-группа еженедельно.  
 - Крупный: ежедневная цикличность через WMS + квартальные и ежегодные аудиты.
 
-## FAQ
+### FAQ
 **Малому бизнесу не проще «смотреть на глаз»?**  
 Нет, даже 2–3% потерь = десятки миллионов сумов.
 
@@ -1103,7 +1103,7 @@ Inventory.uz offers flexible formats: from 24-hour express to regular outsourcin
 **Крупный бизнес делает аудит или инвентаризацию?**  
 Оба. Инвентаризация фиксирует факт, аудит — причины.
 
-## Итог
+### Итог
 Инвентаризация — инструмент контроля и сохранения прибыли для любого бизнеса в Узбекистане.
 
 **Inventory.uz** подбирает формат под размер вашего бизнеса.  
@@ -1113,7 +1113,7 @@ content_uz: `O‘zbekistonda biznes hajmiga qarab inventarizatsiya
 
 Ko‘plab biznes egalari o‘ylaydi: inventarizatsiya — bu faqat «katta omborlar ishi». Aslida, hisob-kitob xatolari kichik va yirik kompaniyalarni birday zararlaydi, faqat yo‘qotishlar hajmi farq qiladi.
 
-## Kichik biznes (500–1 000 SKU gacha)
+### Kichik biznes (500–1 000 SKU gacha)
 **Holatlar:**
 - Hisob Excel yoki 1C «formal uchun».  
 - Ombor — bir nechta xona yoki kichik pavilyon.  
@@ -1125,7 +1125,7 @@ Ko‘plab biznes egalari o‘ylaydi: inventarizatsiya — bu faqat «katta ombor
 
 📌 Misol: Qashqadaryo do‘koni 25 mln so‘m yo‘qotdi, qimmat elektronika noto‘g‘ri hisoblangan.
 
-## O‘rta biznes (1 000–10 000 SKU)
+### O‘rta biznes (1 000–10 000 SKU)
 **Holatlar:**
 - Ombor 500–3 000 m².  
 - Bir nechta smenalar va omborchilar.  
@@ -1137,7 +1137,7 @@ Ko‘plab biznes egalari o‘ylaydi: inventarizatsiya — bu faqat «katta ombor
 
 📌 Misol: Toshkent FMCG distribyutori A-guruhni haftalik tekshiruv bilan yo‘qotishni 4% dan 1,5% ga kamaytirdi.
 
-## Katta biznes (10 000+ SKU)
+#### Katta biznes (10 000+ SKU)
 **Holatlar:**
 - Maydon >5 000 m².  
 - Adresli saqlash, WMS, ERP va marketplace integratsiyasi.
@@ -1148,19 +1148,19 @@ Ko‘plab biznes egalari o‘ylaydi: inventarizatsiya — bu faqat «katta ombor
 
 📌 Misol: Distribyutor $120 000 yo‘qotdi, audit va jarayonlarni to‘g‘irlashdan so‘ng yo‘qotishlar ikki barobarga kamaydi.
 
-## Umumiy tendensiya
+#### Umumiy tendensiya
 - Kichik biznes: har bir tovar xavf ostida.  
 - O‘rta biznes: tizimli xatolar va bo‘limlararo ziddiyat.  
 - Katta biznes: moliyaviy yo‘qotishlar va obro‘.
 
 💡 Xulosa: inventarizatsiya barcha uchun zarur, format biznes hajmiga bog‘liq.
 
-## Tavsiya etilgan format
+### Tavsiya etilgan format
 - Kichik: choraklik tanlab tekshirish.  
 - O‘rta: ABC siklik inventarizatsiya, A-guruh haftalik.  
 - Katta: WMS orqali kunlik siklik + choraklik va yillik audit.
 
-## FAQ
+#### FAQ
 **Kichik biznes «ko‘z bilan qarash» yetarlimi?**  
 Yo‘q, 2–3% yo‘qotish = o‘n millionlar so‘m.
 
@@ -1170,7 +1170,7 @@ Darhol emas, intizom va adresli saqlash bilan boshlash mumkin.
 **Katta biznes audit qiladimi yoki inventarizatsiya?**  
 Ikki-holatda ham. Inventarizatsiya faktni, audit sababni ko‘rsatadi.
 
-## Xulosa
+#### Xulosa
 Inventarizatsiya — O‘zbekistondagi har qanday biznes uchun nazorat va daromadni saqlash vositasi.
 
 **Inventory.uz** biznes hajmiga mos formatni tanlaydi.  
@@ -1180,7 +1180,7 @@ content_en: `Inventory for Different Business Sizes in Uzbekistan
 
 Many business owners think inventory is only for «large warehouses». In reality, accounting errors affect small and large companies alike. The difference is in the scale of losses.
 
-## Small Business (up to 500–1,000 SKUs)
+### Small Business (up to 500–1,000 SKUs)
 **Situations:**
 - Accounting in Excel or 1C for formality.  
 - Warehouse = a few rooms or a small pavilion.  
@@ -1192,7 +1192,7 @@ Many business owners think inventory is only for «large warehouses». In realit
 
 📌 Example: Appliance store in Kashkadarya lost 25 mln UZS due to accounting mistakes.
 
-## Medium Business (1,000–10,000 SKUs)
+### Medium Business (1,000–10,000 SKUs)
 **Situations:**
 - Warehouse 500–3,000 m².  
 - Multiple shifts, several warehouse workers.  
@@ -1204,7 +1204,7 @@ Many business owners think inventory is only for «large warehouses». In realit
 
 📌 Example: FMCG distributor in Tashkent reduced shortage from 4% to 1.5% with weekly A-group cyclical inventory.
 
-## Large Business (10,000+ SKUs)
+### Large Business (10,000+ SKUs)
 **Situations:**
 - Area >5,000 m².  
 - Address-based storage, WMS, ERP and marketplace integration.
@@ -1215,19 +1215,19 @@ Many business owners think inventory is only for «large warehouses». In realit
 
 📌 Example: Distributor lost $120,000; after audit and process correction, losses halved the next quarter.
 
-## General Pattern
+### General Pattern
 - Small business: each item is at risk.  
 - Medium business: systemic errors and interdepartment conflicts.  
 - Large business: large financial losses and reputation.
 
 💡 Conclusion: inventory is necessary for all. Format depends on business size.
 
-## Recommended Format
+### Recommended Format
 - Small: quarterly selective check of key items.  
 - Medium: ABC cyclical inventory, A-group weekly.  
 - Large: daily cycles via WMS + quarterly and yearly audits.
 
-## FAQ
+### FAQ
 **Is «eyeballing» enough for small business?**  
 No, even 2–3% loss = tens of millions UZS.
 
@@ -1237,7 +1237,7 @@ Not immediately, start with discipline and address-based storage.
 **Does large business do audit or inventory?**  
 Both. Inventory records facts, audit identifies causes.
 
-## Conclusion
+### Conclusion
 Inventory is a tool for control and profit preservation for any business in Uzbekistan.
 
 **Inventory.uz** selects a format suitable for your business size.  

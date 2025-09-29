@@ -39,7 +39,7 @@ export default function CTA() {
               </div>
 
               {/* Trust Indicators */}
-              <div className="grid md:grid-cols-3 grid-cols-2 gap-8 pt-8 border-t border-border">
+              {/* <div className="grid md:grid-cols-3 grid-cols-2 gap-8 pt-8 border-t border-border">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-orange-400 mb-1">
                     {t("callToAction.responseTime.value")}
@@ -60,7 +60,7 @@ export default function CTA() {
                     {t("callToAction.responseTime.label")}
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </CardContent>
         </Card>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "../globals.css";
+import CookieConsent from "./(root)/components/CookieConsent/CookieConsent";
 
 export async function generateMetadata({
   params,
@@ -118,6 +119,7 @@ export default async function RootLayout({
       <body suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <CookieConsent/>
         </NextIntlClientProvider>
       </body>
     </html>

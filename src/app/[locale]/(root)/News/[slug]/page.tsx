@@ -139,7 +139,19 @@ export default async function Page({ params }: ArticlePageParams) {
           {/* Article Content */}
           <div className="text-foreground leading-relaxed mb-10">
             <div className="prose xl:prose-xl max-w-none dark:prose-invert">
-              <ReactMarkdown>{content}</ReactMarkdown>
+              <ReactMarkdown
+                components={{
+                  a: ({ node, ...props }) => (
+                    <a
+                      {...props}
+                      download
+                      className="text-blue-600 underline"
+                    />
+                  ),
+                }}
+              >
+                {content}
+              </ReactMarkdown>
             </div>
           </div>
         </div>

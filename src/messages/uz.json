@@ -196,6 +196,9 @@
     }
   },
   "cookies": {
+    "cookieTitle": "Ushbu sayt cookie fayllardan foydalanadi. Davom etish uchun rozilik bering.",
+    "succesBtn": "Qabul qilish",
+    "closeBtn": "O‘tkazib yuborish",
     "title": "Maxfiylik siyosati - Inventory Uzbekistan",
     "description": "Inventory Uzbekistan kompaniyasining maxfiylik siyosati va shaxsiy ma’lumotlarni qayta ishlash tartibi.",
     "pageTitle": "Maxfiylik siyosati",
@@ -250,7 +253,7 @@
     "section9Intro": "Shaxsiy ma’lumotlarni qayta ishlash bilan bog‘liq savollar bo‘yicha biz bilan bog‘lanishingiz mumkin:",
     "section9List": [
       "Email: info@inventory.uz",
-      "Telefon: +998 (XX) XXX-XX-XX"
+      "Telefon: +998 (91) 644-07-02"
     ]
   },
   "privacy": {
@@ -342,7 +345,7 @@
         ],
         "list": [
           "Email: info@inventory.uz",
-          "Telefon: +998 (XX) XXX-XX-XX"
+          "Telefon: +998 (91) 644-07-02"
         ]
       }
     }

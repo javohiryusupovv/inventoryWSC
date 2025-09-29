@@ -28,13 +28,13 @@ export default function FooterPage() {
                         <h3 className="font-semibold text-foreground">{t("navigation")}</h3>
                         <nav className="space-y-2">
                             <Link
-                                href={`#services`}
+                                href={`/#services`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {t("links.services")}
                             </Link>
                             <Link
-                                href={`#workflow`}
+                                href={`/#workflow`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {t("links.howWeWork")}
