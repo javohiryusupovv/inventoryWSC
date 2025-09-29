@@ -53,7 +53,7 @@
         "label": "Inventory accuracy"
       },
       "time": {
-        "value": "48h",
+        "value": "h",
         "label": "Average completion time"
       }
     },

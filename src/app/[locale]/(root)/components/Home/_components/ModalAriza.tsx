@@ -77,6 +77,7 @@ export default function ModalAriza() {
     <div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger
+          data-aos="fade-right"
           onClick={() => setOpen(true)}
           className="flex w-full justify-center text-orange-400 border-orange-400 hover:bg-orange-400 transition-all duration-200 hover:text-white items-center space-x-2 text-lg px-8 py-[10px] rounded-md border"
         >
@@ -164,7 +165,7 @@ export default function ModalAriza() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-4 py-2 rounded-md"
+                className="w-full bg-orange-400 transition-all duration-200 hover:bg-orange-400/70 text-white px-4 py-2 rounded-md"
               >
                 {m("submit")}
               </button>

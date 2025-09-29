@@ -38,7 +38,7 @@ export default function SecondPage() {
         <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">{t("whyChooseUs")}</h2>
+                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance" data-aos="fade-up">{t("whyChooseUs")}</h2>
                     <div className="w-24 h-1 bg-orange-400 mx-auto"></div>
                 </div>
 
@@ -46,7 +46,7 @@ export default function SecondPage() {
                     {uspItems.map((item, index) => {
                         const Icon = iconMap[index as keyof typeof iconMap]
                         return (
-                            <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300">
+                            <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300" data-aos="fade-up">
                                 <CardContent className="p-8">
                                     <div className="w-16 h-16 bg-orange-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-400/20 transition-colors">
                                         <Icon className="w-8 h-8 text-orange-400" />

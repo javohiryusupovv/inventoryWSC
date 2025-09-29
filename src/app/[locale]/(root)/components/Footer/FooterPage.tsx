@@ -66,10 +66,10 @@ export default function FooterPage() {
                                 <Mail className="w-4 h-4" />
                                 <span>info@inventory.uz</span>
                             </a>
-                            <div className="flex items-start space-x-2 text-sm text-muted-foreground">
-                                <MapPin className="sm:w-10 sm:h-10 w-5 h-5 sm:mt-0.5" />
-                                <span>{t("contact.address")}</span>
-                            </div>
+                            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" className="flex group items-start space-x-2 text-sm text-muted-foreground">
+                                <MapPin className="group-hover:text-black transition-all duration-200 sm:w-10 sm:h-10 w-5 h-5 sm:mt-0.5" />
+                                <span className=" transition-all duration-200 group-hover:text-black">{t("contact.address")}</span>
+                            </a>
                         </div>
                     </div>
 

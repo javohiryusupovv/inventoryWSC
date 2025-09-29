@@ -1,13 +1,26 @@
-import { Calendar, User, ArrowRight } from "lucide-react";
+"use client"
+
+import { Calendar, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "../../../../../constants/page";
 import { useLocale, useTranslations } from "next-intl";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 export default function News() {
   const locale = useLocale();
   const news = newsData;
   const t = useTranslations("HomePage");
+
+  useEffect(() => {
+    AOS.init({
+        duration: 400, // animatsiya davomiyligi (ms)
+        once: true,     // faqat 1 marta ishlasinmi yoki scroll qilganda ham
+    });
+}, []);
+
   return (
     <section className="py-14 bg-background">
       <div className="container mx-auto px-4">
@@ -22,9 +35,10 @@ export default function News() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {news.map((item) => (
-            <div
+            <Link href={`/${locale}/news/${item.slug}`}
               key={item.id}
               className="bg-white rounded-lg shadow p-4 group cursor-pointer"
+              data-aos="fade-up"
             >
               <div className="w-full h-[200px] mb-4 rounded-md overflow-hidden">
                 <Image
@@ -55,13 +69,12 @@ export default function News() {
                   ? item.description_ru
                   : item.description_en}
               </p>
-              <Link
-                href={`/${locale}/news/${item.slug}`}
+              <button
                 className="text-orange-600 flex items-center gap-1 font-medium"
               >
                 {t("read")} <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+              </button>
+            </Link>
           ))}
         </div>
       </div>

@@ -14,19 +14,20 @@ export default function NewsHome() {
     <section className="py-20 max-sm:py-10 max-sm:pb-5 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance" data-aos="fade-up">
             {t("newsAndArticles")}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty" data-aos="fade-up">
             {t("newsAndArticlesDesc")}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {news.slice(0, 3).map((item) => (
-            <div
+            <Link href={`/${locale}/news/${item.slug}`}
               key={item.id}
               className="bg-white rounded-lg shadow p-4 group cursor-pointer"
+              data-aos="fade-up"
             >
               <div className="w-full h-[200px] mb-4 rounded-md overflow-hidden">
                 <Image
@@ -58,13 +59,12 @@ export default function NewsHome() {
                   : item.description_en}
               </p>
               
-              <Link
-                href={`/${locale}/news/${item.slug}`}
+              <button
                 className="text-orange-400 flex items-center gap-1 font-medium"
               >
                 {t("read")} <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+              </button>
+            </Link>
           ))}
         </div>
 
