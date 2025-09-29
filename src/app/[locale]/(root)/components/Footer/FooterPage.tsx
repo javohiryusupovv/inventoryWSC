@@ -40,13 +40,7 @@ export default function FooterPage() {
                                 {t("links.howWeWork")}
                             </Link>
                             <Link
-                                href={`#cases`}
-                                className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-                            >
-                                {t("links.cases")}
-                            </Link>
-                            <Link
-                                href={`/news`}
+                                href={`/${locale}/news`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {t("links.news")}
