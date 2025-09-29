@@ -10,9 +10,9 @@ import { Globe } from "lucide-react";
 import { useRouter, usePathname } from "next/navigation";
 
 const LANGUAGES = [
-  { code: "en", label: "English" },
-  { code: "ru", label: "Русский" },
   { code: "uz", label: "O'zbekcha" },
+  { code: "ru", label: "Русский" },
+  { code: "en", label: "English" },
 ];
 
 export default function MenyuLanguage() {

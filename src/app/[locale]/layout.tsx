@@ -13,19 +13,16 @@ export async function generateMetadata({
   // Til bo‘yicha matnlarni sozlash
   const meta = {
     ru: {
-      title: "Inventory Uzbekistan – Инвентаризация складов",
-      description:
-        "Профессиональная инвентаризация и аудит складов в Узбекистане. Точная проверка, оптимизация логистики, гарантия результата и лучшие цены.",
+      title: "Инвентаризация и аудит складов в Узбекистане | Inventory.uz",
+      description: "Профессиональная инвентаризация складов и аудит остатков в Узбекистане. Мы снижаем потери, повышаем точность учета и скорость работы склада. Inventory.uz — эксперт в инвентаризации.",
     },
     uz: {
-      title: "Inventory Uzbekistan – Omborlarni inventarizatsiya qilish",
-      description:
-        "Butun O‘zbekistonda omborlarni professional inventarizatsiya va auditi. Aniqlik, logistika optimallashtirish va kafolatlangan natija.",
+      title: "O‘zbekistondagi omborlarni inventarizatsiya qilish va audit | Inventory.uz",
+      description: "Omborlarning professional inventarizatsiyasi va qoldiqlar auditi O‘zbekistonda. Yo‘qotishlarni kamaytiramiz, hisob aniqligini va ombor ish tezligini oshiramiz. Inventory.uz — inventarizatsiya bo‘yicha ekspert.",
     },
     en: {
-      title: "Inventory Uzbekistan – Warehouse Inventory & Audit",
-      description:
-        "Professional warehouse inventory and audit across Uzbekistan. Accurate checks, logistics optimization, guaranteed results and best prices.",
+      title: "Inventory and warehouse audit in Uzbekistan | Inventory.uz",
+      description: "Professional warehouse inventory and stock audit in Uzbekistan. We reduce losses, increase accounting accuracy and warehouse efficiency. Inventory.uz — the expert in inventory.",
     },
   };
 
