@@ -25,7 +25,7 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Phone */}
-              <a href="tel:+998916440702" className="mb-4" data-aos="fade-down">
+              <a href="tel:+998887790060" className="mb-4" data-aos="fade-down">
                 <Card className="group hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
@@ -35,7 +35,7 @@ export default function Contact() {
                       {p("contactLabels.phone")}
                     </h3>
                     <p className="text-muted-foreground group-hover:text-orange-400 transition-colors">
-                      +998 (91) 644 07 02
+                      +998 (88) 779-00-60
                     </p>
                   </CardContent>
                 </Card>

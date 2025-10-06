@@ -165,7 +165,7 @@ export default function PrivacyPage() {
                 <p>По вопросам, связанным с обработкой персональных данных, вы можете связаться с нами:</p>
                 <ul>
                   <li>Email: info@inventory.uz</li>
-                  <li>Телефон: +998 (91) 644-07-02</li>
+                  <li>Телефон: +998 (88) 779-00-60</li>
                 </ul>
               </CardContent>
             </Card>

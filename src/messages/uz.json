@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "title": "Inventarizatsiya va omborlarni audit qilish butun O'zbekiston bo'ylab",
+    "title": "Omborlarni inventarizatsiya va audit qilish butun O'zbekiston bo'ylab",
     "subtitle": "Aniq tekshiruv, arzon narxlar, natija kafolati va qo'llab-quvvatlash",
     "callButton": "Murojaat qilish",
     "telegram": "Aloqa Telegram",
@@ -253,7 +253,7 @@
     "section9Intro": "Shaxsiy ma’lumotlarni qayta ishlash bilan bog‘liq savollar bo‘yicha biz bilan bog‘lanishingiz mumkin:",
     "section9List": [
       "Email: info@inventory.uz",
-      "Telefon: +998 (91) 644-07-02"
+      "Telefon: +998 (88) 779-00-60"
     ]
   },
   "privacy": {
@@ -345,7 +345,7 @@
         ],
         "list": [
           "Email: info@inventory.uz",
-          "Telefon: +998 (91) 644-07-02"
+          "Telefon: +998 (88) 779-00-60"
         ]
       }
     }

@@ -36,7 +36,7 @@ export async function generateMetadata({
     title: t.title,
     description: t.description,
     icons: {
-      icon: "/inventory.ico",
+      icon: "inventory.ico",
     },
     alternates: {
       canonical: `https://inventory.uz${locale === "ru" ? "" : `/${locale}`}`,
