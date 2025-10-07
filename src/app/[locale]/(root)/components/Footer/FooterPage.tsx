@@ -28,25 +28,19 @@ export default function FooterPage() {
                         <h3 className="font-semibold text-foreground">{t("navigation")}</h3>
                         <nav className="space-y-2">
                             <Link
-                                href={`#services`}
+                                href={`/#services`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {t("links.services")}
                             </Link>
                             <Link
-                                href={`#workflow`}
+                                href={`/#workflow`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {t("links.howWeWork")}
                             </Link>
                             <Link
-                                href={`#cases`}
-                                className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-                            >
-                                {t("links.cases")}
-                            </Link>
-                            <Link
-                                href={`/news`}
+                                href={`/${locale}/news`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {t("links.news")}
@@ -59,11 +53,11 @@ export default function FooterPage() {
                         <h3 className="font-semibold text-foreground">{t("links.contacts")}</h3>
                         <div className="space-y-3">
                             <a
-                                href="tel:+998916440702"
+                                href="tel:+998887790060"
                                 className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 <Phone className="w-4 h-4" />
-                                <span>+998 (91) 644-07-02</span>
+                                <span>+998 (88) 779-00-60</span>
                             </a>
                             <a
                                 href="mailto:info@inventory.uz"
@@ -72,10 +66,10 @@ export default function FooterPage() {
                                 <Mail className="w-4 h-4" />
                                 <span>info@inventory.uz</span>
                             </a>
-                            <div className="flex items-start space-x-2 text-sm text-muted-foreground">
-                                <MapPin className="sm:w-10 sm:h-10 w-5 h-5 sm:mt-0.5" />
-                                <span>{t("contact.address")}</span>
-                            </div>
+                            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" className="flex group items-start space-x-2 text-sm text-muted-foreground">
+                                <MapPin className="group-hover:text-black transition-all duration-200 sm:w-10 sm:h-10 w-5 h-5 sm:mt-0.5" />
+                                <span className=" transition-all duration-200 group-hover:text-black">{t("contact.address")}</span>
+                            </a>
                         </div>
                     </div>
 

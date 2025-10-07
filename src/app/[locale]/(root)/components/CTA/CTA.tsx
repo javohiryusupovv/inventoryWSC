@@ -14,10 +14,10 @@ export default function CTA() {
           <CardContent className="p-12 text-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance">
+                <h2 className="text-3xl lg:text-4xl font-bold text-foreground text-balance" data-aos="fade-up">
                   {t("callToAction.title")}
                 </h2>
-                <p className="text-xl text-muted-foreground text-pretty">
+                <p className="text-xl text-muted-foreground text-pretty" data-aos="fade-up">
                   {t("callToAction.desc")}
                 </p>
               </div>
@@ -25,7 +25,7 @@ export default function CTA() {
               {/* CTA Buttons */}
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <ModalAriza />
-                <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full">
+                <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full" data-aos="fade-left">
                   <Button
                     variant="outline"
                     size="lg"
@@ -39,7 +39,7 @@ export default function CTA() {
               </div>
 
               {/* Trust Indicators */}
-              <div className="grid md:grid-cols-3 grid-cols-2 gap-8 pt-8 border-t border-border">
+              {/* <div className="grid md:grid-cols-3 grid-cols-2 gap-8 pt-8 border-t border-border">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-orange-400 mb-1">
                     {t("callToAction.responseTime.value")}
@@ -60,7 +60,7 @@ export default function CTA() {
                     {t("callToAction.responseTime.label")}
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </CardContent>
         </Card>

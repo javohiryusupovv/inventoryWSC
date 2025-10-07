@@ -14,24 +14,25 @@ export default function NewsHome() {
     <section className="py-20 max-sm:py-10 max-sm:pb-5 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance" data-aos="fade-up">
             {t("newsAndArticles")}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty" data-aos="fade-up">
             {t("newsAndArticlesDesc")}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {news.slice(0, 3).map((item) => (
-            <div
+            <Link href={`/${locale}/news/${item.slug}`}
               key={item.id}
               className="bg-white rounded-lg shadow p-4 group cursor-pointer"
+              data-aos="fade-up"
             >
               <div className="w-full h-[200px] mb-4 rounded-md overflow-hidden">
                 <Image
                   src={item.image}
-                  alt={item.title}
+                  alt={item.title_en}
                   width={400}
                   height={200}
                   className=" transition-all duration-200 group-hover:scale-105 w-full h-full object-center object-cover"
@@ -42,34 +43,28 @@ export default function NewsHome() {
                   <Calendar className="w-4 h-4" />
                   {item.date}
                 </span>
-                <span className="flex items-center gap-1">
-                  <User className="w-4 h-4" />
-                  {item.author}
-                </span>
               </div>
               <h3 className="font-semibold text-lg mb-2 group-hover:text-orange-400 line-clamp-2">
-                {item.title}
+              {locale === "uz"
+                  ? item.title_uz
+                  : locale === "ru"
+                  ? item.title_ru
+                  : item.title_en}
               </h3>
               <p className="text-gray-600 mb-3 line-clamp-3">
-                {item.description}
+              {locale === "uz"
+                  ? item.description_uz
+                  : locale === "ru"
+                  ? item.description_ru
+                  : item.description_en}
               </p>
-              <div className="flex flex-wrap gap-2 mb-5">
-                {item.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="bg-orange-400/70 group-hover:bg-orange-400 transition-all duration-200 text-white px-2 py-1 text-xs rounded"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <Link
-                href={`/${locale}/news/${item.slug}`}
+              
+              <button
                 className="text-orange-400 flex items-center gap-1 font-medium"
               >
                 {t("read")} <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+              </button>
+            </Link>
           ))}
         </div>
 

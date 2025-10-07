@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "../globals.css";
+import CookieConsent from "./(root)/components/CookieConsent/CookieConsent";
 
 export async function generateMetadata({
   params,
@@ -13,16 +14,19 @@ export async function generateMetadata({
   // Til bo‘yicha matnlarni sozlash
   const meta = {
     ru: {
-      title: "Инвентаризация и аудит складов в Узбекистане | Inventory.uz",
-      description: "Профессиональная инвентаризация складов и аудит остатков в Узбекистане. Мы снижаем потери, повышаем точность учета и скорость работы склада. Inventory.uz — эксперт в инвентаризации.",
+      title: "Инвентаризация и аудит складов по всему Узбекистану",
+      description:
+        "Профессиональная инвентаризация и аудит складов в Узбекистане. Точная проверка, оптимизация логистики, гарантия результата и лучшие цены.",
     },
     uz: {
-      title: "O‘zbekistondagi omborlarni inventarizatsiya qilish va audit | Inventory.uz",
-      description: "Omborlarning professional inventarizatsiyasi va qoldiqlar auditi O‘zbekistonda. Yo‘qotishlarni kamaytiramiz, hisob aniqligini va ombor ish tezligini oshiramiz. Inventory.uz — inventarizatsiya bo‘yicha ekspert.",
+      title: "Omborlarni inventarizatsiya va audit qilish butun O'zbekiston bo'ylab",
+      description:
+        "Butun O‘zbekistonda omborlarni professional inventarizatsiya va auditi. Aniqlik, logistika optimallashtirish va kafolatlangan natija.",
     },
     en: {
-      title: "Inventory and warehouse audit in Uzbekistan | Inventory.uz",
-      description: "Professional warehouse inventory and stock audit in Uzbekistan. We reduce losses, increase accounting accuracy and warehouse efficiency. Inventory.uz — the expert in inventory.",
+      title: "Inventory and warehouse audit across all Uzbekistan",
+      description:
+        "Professional warehouse inventory and audit across Uzbekistan. Accurate checks, logistics optimization, guaranteed results and best prices.",
     },
   };
 
@@ -32,7 +36,7 @@ export async function generateMetadata({
     title: t.title,
     description: t.description,
     icons: {
-      icon: "/inventory.ico",
+      icon: "inventory.ico",
     },
     alternates: {
       canonical: `https://inventory.uz${locale === "ru" ? "" : `/${locale}`}`,
@@ -81,6 +85,7 @@ export default async function RootLayout({
       <head>
         <link rel="canonical" href="https://inventory.uz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/inventory.ico" type="image/x-icon" />
         <meta name="theme-color" content="#1f2937" />
         {/* Yandex.Metrika counter */}
         <script
@@ -115,6 +120,7 @@ export default async function RootLayout({
       <body suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <CookieConsent/>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -9,7 +9,7 @@ export default function Contact() {
   const p = useTranslations("HomePage.contactInfo")
   const f = useTranslations("FooterPage.contact")
   return (
-    <section id="contacts" className="py-20 bg-muted/30">
+    <section id="contacts" className="py-20 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
@@ -25,64 +25,64 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Phone */}
-              <Card className="group hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
-                    <Phone className="w-6 h-6 text-orange-400" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    {p("contactLabels.phone")}
-                  </h3>
-                  <a
-                    href="tel:+998916440702"
-                    className="text-muted-foreground hover:text-orange-400 transition-colors"
-                  >
-                    +998 (91) 644 07 02
-                  </a>
-                </CardContent>
-              </Card>
+              <a href="tel:+998887790060" className="mb-4" data-aos="fade-down">
+                <Card className="group hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
+                      <Phone className="w-6 h-6 text-orange-400" />
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">
+                      {p("contactLabels.phone")}
+                    </h3>
+                    <p className="text-muted-foreground group-hover:text-orange-400 transition-colors">
+                      +998 (88) 779-00-60
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
 
               {/* Email */}
-              <Card className="group hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
-                    <Mail className="w-6 h-6 text-orange-400" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">{p("contactLabels.email")}</h3>
-                  <a
-                    href="mailto:info@inventory.uz"
-                    className="text-muted-foreground hover:text-orange-400 transition-colors"
-                  >
-                    info@inventory.uz
-                  </a>
-                </CardContent>
-              </Card>
+              <a href={"mailto:info@inventory.uz"} data-aos="fade-down">
+                <Card className="group hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
+                      <Mail className="w-6 h-6 text-orange-400" />
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">{p("contactLabels.email")}</h3>
+                    <p className="text-muted-foreground group-hover:text-orange-400 transition-colors">
+                      info@inventory.uz
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
             </div>
 
             {/* Address */}
-            <Card className="group hover:shadow-lg transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-[55px] h-[50px] bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
-                    <MapPin className="w-6 h-6 text-orange-400" />
+            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" data-aos="fade-right">
+              <Card className="group hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-[55px] h-[50px] bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
+                      <MapPin className="w-6 h-6 text-orange-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        {p("contactLabels.address")}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {p("address")}
+                      </p>
+                      {/* <p className="text-muted-foreground">
+                        Бизнес-центр &quot;Инвентори&quot;, 5 этаж
+                      </p> */}
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-2">
-                      {p("contactLabels.address")}
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {p("address")}
-                    </p>
-                    {/* <p className="text-muted-foreground">
-                      Бизнес-центр &quot;Инвентори&quot;, 5 этаж
-                    </p> */}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </a>
 
             {/* Working Hours */}
-            <Card className="group hover:shadow-lg transition-all duration-300">
+            <Card className="group hover:shadow-lg transition-all duration-300" data-aos="fade-right">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center group-hover:bg-orange-400/20 transition-colors">
@@ -103,7 +103,7 @@ export default function Contact() {
             </Card>
 
             {/* Telegram */}
-            <Card className="bg-orange-400/5 border-orange-400/20 group hover:shadow-lg transition-all duration-300">
+            <Card className="bg-orange-400/5 border-orange-400/20 group hover:shadow-lg transition-all duration-300" data-aos="fade-right">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
@@ -130,8 +130,8 @@ export default function Contact() {
           </div>
 
           {/* Map Placeholder */}
-          <div className="space-y-6">
-            <Card className="overflow-hidden">
+          <div className="space-y-6" >
+            <Card className="overflow-hidden" data-aos="fade-left">
               <CardContent className="p-0">
                 <div className="w-full h-96 bg-muted flex items-center justify-center">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.339267210929!2d69.31522167653975!3d41.301482501318546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5112d8efde1%3A0x9599cb3144fe01e0!2zMiAyLCDRg9C70LjRhtCwINCc0LDRhdGC0YPQvNC60YPQu9C4IDEyMiwg0KLQvnNoa2VudCwgVG9zaGtlbnQsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1758517357628!5m2!1sru!2s" width="600" height="450" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -140,7 +140,7 @@ export default function Contact() {
             </Card>
 
             {/* Quick Contact */}
-            <Card className="bg-primary/5 border-primary/20">
+            <Card className="bg-primary/5 border-primary/20" data-aos="fade-left">
               <CardContent className="p-6 text-center">
                 <h3 className="font-semibold text-foreground mb-2">
                   {p("urgentConsultation.title")}
@@ -148,8 +148,8 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4">
                   {p("urgentConsultation.desc")}
                 </p>
-                <Link href={"tel:+998916440702"}>
-                  <Button className="w-full">{p("urgentConsultation.button")}</Button>
+                <Link href={"https://t.me/InventoryUz"}>
+                  <Button className="w-full h-[50px] bg-orange-400  hover:bg-orange-400/70 transition-all duration-200">{p("urgentConsultation.button")}</Button>
                 </Link>
               </CardContent>
             </Card>

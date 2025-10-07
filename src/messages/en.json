@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "title": "Inventory and warehouse audit across Uzbekistan",
+    "title": "Inventory and warehouse audit across all Uzbekistan",
     "subtitle": "Accurate inspection, low prices, guaranteed results and support",
     "callButton": "Request Service",
     "telegram": "Contact via Telegram",
@@ -53,7 +53,7 @@
         "label": "Inventory accuracy"
       },
       "time": {
-        "value": "48h",
+        "value": "h",
         "label": "Average completion time"
       }
     },
@@ -194,6 +194,9 @@
     }
   },
   "cookies": {
+    "cookieTitle": "This website uses cookies. Please give your consent to continue.",
+    "succesBtn": "Accept",
+    "closeBtn": "Decline",
     "title": "Privacy Policy - Inventory Uzbekistan",
     "description": "Privacy policy and personal data processing rules of Inventory Uzbekistan company.",
     "pageTitle": "Privacy Policy",
@@ -248,7 +251,7 @@
     "section9Intro": "For questions related to the processing of personal data, you can contact us:",
     "section9List": [
       "Email: info@inventory.uz",
-      "Phone: +998 (XX) XXX-XX-XX"
+      "Phone: +998 (88) 779-00-60"
     ]
   },
   "privacy": {
@@ -340,7 +343,7 @@
         ],
         "list": [
           "Email: info@inventory.uz",
-          "Phone: +998 (XX) XXX-XX-XX"
+          "Phone: +998 (88) 779-00-60"
         ]
       }
     }
