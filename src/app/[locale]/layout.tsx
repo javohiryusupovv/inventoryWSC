@@ -19,7 +19,8 @@ export async function generateMetadata({
         "Профессиональная инвентаризация и аудит складов в Узбекистане. Точная проверка, оптимизация логистики, гарантия результата и лучшие цены.",
     },
     uz: {
-      title: "Omborlarni inventarizatsiya va audit qilish butun O'zbekiston bo'ylab",
+      title:
+        "Omborlarni inventarizatsiya va audit qilish butun O'zbekiston bo'ylab",
       description:
         "Butun O‘zbekistonda omborlarni professional inventarizatsiya va auditi. Aniqlik, logistika optimallashtirish va kafolatlangan natija.",
     },
@@ -36,7 +37,12 @@ export async function generateMetadata({
     title: t.title,
     description: t.description,
     icons: {
-      icon: "inventory.ico",
+      icon: [
+        { url: "/inventory.ico", type: "image/x-icon" },
+        { url: "/inventory.png", type: "image/png" },
+      ],
+      shortcut: { url: "/inventory.ico" },
+      apple: { url: "/apple-touch-icon.png" },
     },
     alternates: {
       canonical: `https://inventory.uz${locale === "ru" ? "" : `/${locale}`}`,
@@ -85,7 +91,7 @@ export default async function RootLayout({
       <head>
         <link rel="canonical" href="https://inventory.uz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/inventory.ico" type="image/x-icon" />
+        <link rel="icon" href="/inventory.png" type="image/png" sizes="512x512" />
         <meta name="theme-color" content="#1f2937" />
         {/* Yandex.Metrika counter */}
         <script
@@ -120,7 +126,7 @@ export default async function RootLayout({
       <body suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
-          <CookieConsent/>
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>
