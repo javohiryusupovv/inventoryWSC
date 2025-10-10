@@ -38,10 +38,10 @@ export async function generateMetadata({
     description: t.description,
     icons: {
       icon: [
-        { url: "/inventory.ico", type: "image/x-icon" },
-        { url: "/inventory.png", type: "image/png" },
+        { url: "https://www.inventory.uz/inventory.ico", type: "image/x-icon" },
+        { url: "https://www.inventory.uz/inventory.png", type: "image/png" },
       ],
-      shortcut: { url: "/inventory.ico" },
+      shortcut: { url: "https://www.inventory.uz/inventory.ico" },
       apple: { url: "/apple-touch-icon.png" },
     },
     alternates: {
