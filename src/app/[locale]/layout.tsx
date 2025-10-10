@@ -91,36 +91,51 @@ export default async function RootLayout({
       <head>
         <link rel="canonical" href="https://inventory.uz" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/inventory.png" type="image/png" sizes="512x512" />
+        <link
+          rel="icon"
+          href="/inventory.png"
+          type="image/png"
+          sizes="512x512"
+        />
         <meta name="theme-color" content="#1f2937" />
+        {/* Yandex.Metrika counter */}
         {/* Yandex.Metrika counter */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {
-                if (document.scripts[j].src === r) { return; }
-            }
-            k=e.createElement(t),
-            a=e.getElementsByTagName(t)[0],
-            k.async=1,
-            k.src=r,
-            a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104253355', 'ym');
+          (function(m,e,t,r,i,k,a){
+              m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for (var j = 0; j < document.scripts.length; j++) {
+                  if (document.scripts[j].src === r) { return; }
+              }
+              k=e.createElement(t),
+              a=e.getElementsByTagName(t)[0],
+              k.async=1,
+              k.src=r,
+              a.parentNode.insertBefore(k,a)
+          })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104589984', 'ym');
 
-        ym(104253355, 'init', {
-            ssr:true,
-            webvisor:true,
-            clickmap:true,
-            ecommerce:"dataLayer",
-            accurateTrackBounce:true,
-            trackLinks:true
-        });
-      `,
+          ym(104589984, 'init', {
+              ssr:true,
+              webvisor:true,
+              clickmap:true,
+              ecommerce:"dataLayer",
+              accurateTrackBounce:true,
+              trackLinks:true
+          });
+        `,
           }}
         />
+        <noscript>
+          <div>
+            <img
+              src="https://mc.yandex.ru/watch/104589984"
+              style={{ position: "absolute", left: "-9999px" }}
+              alt=""
+            />
+          </div>
+        </noscript>
         {/* /Yandex.Metrika counter */}
       </head>
       <body suppressHydrationWarning>
