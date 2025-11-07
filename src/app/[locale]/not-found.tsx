@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Button } from "./[locale]/(root)/components/ui/button";
-import "./globals.css";
+import "../globals.css";
 import { useLocale } from "next-intl";
+import { Button } from "./(root)/components/ui/button";
 
 export const metadata = {
   title: "404 - Page Not Found | Inventory Uzbekistan",
