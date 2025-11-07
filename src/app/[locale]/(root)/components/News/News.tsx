@@ -36,7 +36,8 @@ export default function NewsHome() {
                   alt={item.title_en}
                   width={324}
                   height={200}
-                  className=" transition-all duration-200 group-hover:scale-105 max-w-full h-full object-center object-cover"
+                  loading="lazy"
+                  className="transition-all duration-200 group-hover:scale-105 max-w-full h-full object-cover"
                   priority
                 />
               </div>

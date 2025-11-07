@@ -45,8 +45,9 @@ export default function News() {
                 <Image
                   src={item.image}
                   alt={item.title_en}
-                  width={400}
+                  width={324}
                   height={200}
+                  loading="lazy"
                   className=" transition-all duration-200 group-hover:scale-105 max-w-full h-full object-center object-cover"
                   priority
                 />

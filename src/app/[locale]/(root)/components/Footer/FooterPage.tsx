@@ -17,7 +17,7 @@ export default function FooterPage() {
                 <div className="grid md:grid-cols-4 gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <Image width={200} height={200} src={Logo} alt="Logo Inventory.uz" className="max-w-full object-cover" priority/>
+                        <Image width={200} height={200} src={Logo} alt="Logo Inventory.uz" loading="lazy" className="max-w-full object-cover" priority/>
                         <p className="text-sm text-muted-foreground leading-relaxed">
                             {t("slogan")}
                         </p>

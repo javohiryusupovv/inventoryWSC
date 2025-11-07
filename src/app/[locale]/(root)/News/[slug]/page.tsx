@@ -131,7 +131,9 @@ export default async function Page({ params }: ArticlePageParams) {
                 src={article.image}
                 alt={article.title_en}
                 className="max-w-full h-96 object-cover rounded-lg"
-                loading="eager"
+                loading="lazy"
+                width={900}
+                height={408}
                 priority
               />
             </div>
