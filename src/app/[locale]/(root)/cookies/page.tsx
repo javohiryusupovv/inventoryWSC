@@ -16,9 +16,9 @@ export default function PrivacyPage() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <h3 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
               {t("pageTitle")}
-            </h1>
+            </h3>
             <p className="text-xl text-muted-foreground">
               {t("pageSubtitle")}
             </p>

@@ -1,0 +1,4 @@
+# Inventory.uz Ads.txt
+google.com, pub-XXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Contact email
+CONTACT=info@inventory.uz

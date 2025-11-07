@@ -79,7 +79,7 @@ export default async function Page({ params }: ArticlePageParams) {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <div className="mb-8">
-            <Link href={`/${locale}/news`}>
+            <Link href={`/${locale}/news`} rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 className="flex items-center space-x-2 bg-gray-200 hover:bg-gray-200/50"
@@ -98,13 +98,13 @@ export default async function Page({ params }: ArticlePageParams) {
 
           {/* Article Header */}
           <header className="mb-12">
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+            <h6 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
               {locale === "uz"
                 ? article.title_uz
                 : locale === "ru"
                 ? article.title_ru
                 : article.title_en}
-            </h1>
+            </h6>
 
             <p className="text-xl text-muted-foreground leading-relaxed mb-8 text-pretty">
               {locale === "uz"
@@ -130,8 +130,9 @@ export default async function Page({ params }: ArticlePageParams) {
               <Image
                 src={article.image}
                 alt={article.title_en}
-                className="w-full h-96 object-cover rounded-lg"
+                className="max-w-full h-96 object-cover rounded-lg"
                 loading="eager"
+                priority
               />
             </div>
           )}

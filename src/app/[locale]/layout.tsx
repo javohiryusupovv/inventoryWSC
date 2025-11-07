@@ -16,18 +16,18 @@ export async function generateMetadata({
     ru: {
       title: "Инвентаризация и аудит складов по всему Узбекистану",
       description:
-        "Профессиональная инвентаризация и аудит складов в Узбекистане. Точная проверка, оптимизация логистики, гарантия результата и лучшие цены.",
+        "Профессиональная инвентаризация и аудит складов в Узбекистане. Оптимизация логистики, точные результаты, надежный сервис и выгодные цены для вашего бизнеса.",
     },
     uz: {
       title:
         "Omborlarni inventarizatsiya va audit qilish butun O'zbekiston bo'ylab",
       description:
-        "Butun O‘zbekistonda omborlarni professional inventarizatsiya va auditi. Aniqlik, logistika optimallashtirish va kafolatlangan natija.",
+        "Butun O‘zbekistonda omborlarni professional inventarizatsiya va audit qilish. Logistika samaradorligini oshirish, aniqlik, ishonchli xizmat va raqobatbardosh narxlar.",
     },
     en: {
       title: "Inventory and warehouse audit across all Uzbekistan",
       description:
-        "Professional warehouse inventory and audit across Uzbekistan. Accurate checks, logistics optimization, guaranteed results and best prices.",
+        "Professional warehouse inventory and audit services across Uzbekistan. Improve logistics efficiency, ensure accuracy, reliable service, and competitive pricing.",
     },
   };
 
@@ -89,7 +89,29 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://inventory.uz" />
+        <style>
+          {`
+      body { margin: 0; font-family: 'Inter', sans-serif; }
+      header, main { display: block; }
+      /* Faqat sahifa birinchi ko‘rinishi uchun kerakli CSS */
+    `}
+        </style>
+         {/* Canonical URL */}
+         <link
+          rel="canonical"
+          href={`https://inventory.uz${locale === "ru" ? "" : `/${locale}`}`}
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preload" href="/globals.css" as="style" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
@@ -98,9 +120,32 @@ export default async function RootLayout({
           sizes="512x512"
         />
         <meta name="theme-color" content="#1f2937" />
-        {/* Yandex.Metrika counter */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Inventory Uzbekistan",
+              url: "https://inventory.uz",
+              logo: "https://inventory.uz/inventory.png",
+              sameAs: [
+                "https://www.facebook.com/inventory.uz",
+                "https://www.instagram.com/inventory.uz",
+              ],
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  email: "info@inventory.uz",
+                  contactType: "customer support",
+                },
+              ],
+            }),
+          }}
+        />
         {/* Yandex.Metrika counter */}
         <script
+          async
           dangerouslySetInnerHTML={{
             __html: `
           (function(m,e,t,r,i,k,a){
@@ -128,14 +173,22 @@ export default async function RootLayout({
           }}
         />
         <noscript>
+          <link rel="stylesheet" href="/globals.css" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+            rel="stylesheet"
+          />
           <div>
             <img
               src="https://mc.yandex.ru/watch/104589984"
               style={{ position: "absolute", left: "-9999px" }}
-              alt=""
+              alt="Yandex Metrika"
+              width={1}
+              height={1}
             />
           </div>
         </noscript>
+
         {/* /Yandex.Metrika counter */}
       </head>
       <body suppressHydrationWarning>

@@ -13,9 +13,9 @@ export default function PrivacyPage() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <p className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Политика конфиденциальности
-            </h1>
+            </p>
             <p className="text-xl text-muted-foreground">
               Информация о сборе, обработке и защите персональных данных
             </p>
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
                 <p>
                   Настоящая Политика конфиденциальности (далее — «Политика») регулирует порядок обработки и защиты
                   персональных данных пользователей сайта{" "}
-                  <a href="https://www.inventory.uz" className="text-primary underline">
+                  <a href="https://www.inventory.uz" className="text-primary underline" rel="noopener noreferrer">
                     https://www.inventory.uz
                   </a>{" "}
                   (далее — «Сайт»).

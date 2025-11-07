@@ -10,6 +10,8 @@ import CountUp from 'react-countup';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import Image from "next/image";
+import HomeImg from "../../../../../../public/og-image.jpg"
 
 export default function HomeSection() {
     const t = useTranslations("HomePage");
@@ -39,7 +41,7 @@ export default function HomeSection() {
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
                             <ModalAriza />
-                            <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full" data-aos="fade-right">
+                            <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full" rel="noopener noreferrer" data-aos="fade-right">
                                 <Button
                                     variant="outline"
                                     size="lg"
@@ -63,11 +65,14 @@ export default function HomeSection() {
                     <div className="relative">
                         <Card className="overflow-hidden" data-aos="fade-left">
                             <CardContent className="p-0">
-                                <img
-                                    src="https://media.istockphoto.com/id/1138429558/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%8F%D0%B4%D1%8B-%D0%BF%D0%BE%D0%BB%D0%BE%D0%BA.jpg?s=612x612&w=0&k=20&c=zkhxc5hIJLIQiWaJX_RxaiKlKuanYzSjlqFuUt6fKtA="
+                                <Image
+                                    src={HomeImg}
                                     alt="Professional warehouse inventory management"
-                                    className="w-full h-[400px] lg:h-[500px] object-cover"
+                                    className="max-w-full h-[400px] lg:h-[500px] object-cover"
                                     loading="eager"
+                                    width={600}
+                                    height={400}
+                                    priority
                                 />
                             </CardContent>
                         </Card>

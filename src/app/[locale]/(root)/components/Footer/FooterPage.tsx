@@ -1,4 +1,4 @@
-
+"use client"
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 // import Logo from "../../../public/icons/logo.svg"
@@ -10,14 +10,14 @@ import { useLocale, useTranslations } from "next-intl"
 export default function FooterPage() {
     const locale = useLocale()
     const t = useTranslations("FooterPage")
-
+    const email = "info" + "@" + "inventory.uz";
     return (
         <footer className="bg-muted border-t border-border">
             <div className="container mx-auto px-4 py-12">
                 <div className="grid md:grid-cols-4 gap-8">
                     {/* Company Info */}
                     <div className="space-y-4">
-                        <Image src={Logo} alt="Logo Inventory.uz" className="w-[200px]" />
+                        <Image width={200} height={200} src={Logo} alt="Logo Inventory.uz" className="max-w-full object-cover" priority/>
                         <p className="text-sm text-muted-foreground leading-relaxed">
                             {t("slogan")}
                         </p>
@@ -30,18 +30,21 @@ export default function FooterPage() {
                             <Link
                                 href={`/#services`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                rel="noopener noreferrer"
                             >
                                 {t("links.services")}
                             </Link>
                             <Link
                                 href={`/#workflow`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                rel="noopener noreferrer"
                             >
                                 {t("links.howWeWork")}
                             </Link>
                             <Link
                                 href={`/${locale}/news`}
                                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                rel="noopener noreferrer"
                             >
                                 {t("links.news")}
                             </Link>
@@ -55,18 +58,21 @@ export default function FooterPage() {
                             <a
                                 href="tel:+998887790060"
                                 className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                rel="noopener noreferrer"
                             >
                                 <Phone className="w-4 h-4" />
                                 <span>+998 (88) 779-00-60</span>
                             </a>
                             <a
-                                href="mailto:info@inventory.uz"
+                                href=""
+                                onClick={() => (window.location.href = `mailto:${email}`)}
                                 className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                rel="noopener noreferrer"
                             >
                                 <Mail className="w-4 h-4" />
                                 <span>info@inventory.uz</span>
                             </a>
-                            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" className="flex group items-start space-x-2 text-sm text-muted-foreground">
+                            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" rel="noopener noreferrer" className="flex group items-start space-x-2 text-sm text-muted-foreground">
                                 <MapPin className="group-hover:text-black transition-all duration-200 sm:w-10 sm:h-10 w-5 h-5 sm:mt-0.5" />
                                 <span className=" transition-all duration-200 group-hover:text-black">{t("contact.address")}</span>
                             </a>
@@ -94,12 +100,14 @@ export default function FooterPage() {
                         <Link
                             href={`/${locale}/privacy`}
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                            rel="noopener noreferrer"
                         >
                             {t("footerBottom.privacyPolicy")}
                         </Link>
                         <Link
                             href={`/${locale}/cookies`}
                             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                            rel="noopener noreferrer"
                         >
                             {t("footerBottom.cookies")}
                         </Link>

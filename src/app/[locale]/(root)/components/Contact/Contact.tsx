@@ -1,3 +1,4 @@
+"use client"
 import { Card, CardContent } from "@/app/[locale]/(root)/components/ui/card";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/app/[locale]/(root)/components/ui/button";
@@ -8,6 +9,8 @@ export default function Contact() {
   const t = useTranslations("HomePage.contacts")
   const p = useTranslations("HomePage.contactInfo")
   const f = useTranslations("FooterPage.contact")
+  const email = "info" + "@" + "inventory.uz";
+
   return (
     <section id="contacts" className="py-20 bg-muted/30 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -25,7 +28,7 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Phone */}
-              <a href="tel:+998887790060" className="mb-4" data-aos="fade-down">
+              <a href="tel:+998887790060" className="mb-4" data-aos="fade-down" rel="noopener noreferrer">
                 <Card className="group hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
@@ -42,7 +45,7 @@ export default function Contact() {
               </a>
 
               {/* Email */}
-              <a href={"mailto:info@inventory.uz"} data-aos="fade-down">
+              <a href="" onClick={() => (window.location.href = `mailto:${email}`)}  data-aos="fade-down" rel="noopener noreferrer">
                 <Card className="group hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
@@ -58,7 +61,7 @@ export default function Contact() {
             </div>
 
             {/* Address */}
-            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" data-aos="fade-right">
+            <a href="https://maps.app.goo.gl/3GfVUrq82nn1AJPt7" target="_blank" data-aos="fade-right" rel="noopener noreferrer">
               <Card className="group hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
@@ -119,7 +122,7 @@ export default function Contact() {
                       </p>
                     </div>
                   </div>
-                  <Link href={"https://t.me/InventoryUz"} target="_blank">
+                  <Link href={"https://t.me/InventoryUz"} target="_blank" rel="noopener noreferrer" >
                     <Button variant="outline" size="sm">
                       {p("writeButton")}
                     </Button>
@@ -148,7 +151,7 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4">
                   {p("urgentConsultation.desc")}
                 </p>
-                <Link href={"https://t.me/InventoryUz"}>
+                <Link href={"https://t.me/InventoryUz"} rel="noopener noreferrer">
                   <Button className="w-full h-[50px] bg-orange-400  hover:bg-orange-400/70 transition-all duration-200">{p("urgentConsultation.button")}</Button>
                 </Link>
               </CardContent>

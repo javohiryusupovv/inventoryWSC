@@ -25,7 +25,7 @@ export default function CTA() {
               {/* CTA Buttons */}
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <ModalAriza />
-                <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full" data-aos="fade-left">
+                <Link href={"https://t.me/InventoryUz"} target="_blank" className="max-sm:w-full" rel="noopener noreferrer" data-aos="fade-left">
                   <Button
                     variant="outline"
                     size="lg"
