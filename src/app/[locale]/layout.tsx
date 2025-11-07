@@ -3,6 +3,7 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "../globals.css";
 import CookieConsent from "./(root)/components/CookieConsent/CookieConsent";
+import Script from "next/script";
 
 export async function generateMetadata({
   params,
@@ -141,6 +142,21 @@ export default async function RootLayout({
             }),
           }}
         />
+       {/* Google Analytics */}
+       <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JXJCZBD1Y8"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JXJCZBD1Y8', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         {/* Yandex.Metrika counter */}
         <script
           async
