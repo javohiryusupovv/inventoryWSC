@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
-import Post6 from "../public/post6.jpg";
+import Post6 from "../public/post6.png";
 import Post1 from "../public/post1.png";
-import Post2 from "../public/post2.jpg";
-import Post3 from "../public/post3.jpeg";
+import Post2 from "../public/post2.png";
+import Post3 from "../public/post3.png";
 import Post4 from "../public/post4.webp";
 import Post5 from "../public/post5.webp";
 
