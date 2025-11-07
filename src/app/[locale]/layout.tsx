@@ -96,11 +96,9 @@ export default async function RootLayout({
       /* Faqat sahifa birinchi ko‘rinishi uchun kerakli CSS */
     `}
         </style>
-         {/* Canonical URL */}
-         <link
-          rel="canonical"
-          href={`https://inventory.uz${locale === "ru" ? "" : `/${locale}`}`}
-        />
+        {/* Canonical URL */}
+        <link rel="canonical" href={`https://inventory.uz/${locale}`} />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
