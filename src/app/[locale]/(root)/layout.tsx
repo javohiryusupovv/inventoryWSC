@@ -3,13 +3,12 @@ import FooterPage from "@/app/[locale]/(root)/components/Footer/FooterPage"
 
 
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootContentLayout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <NavbarLayout />
             <main className="pt-[100px]">{children}</main>
             <FooterPage />
-
         </>
     )
 }
