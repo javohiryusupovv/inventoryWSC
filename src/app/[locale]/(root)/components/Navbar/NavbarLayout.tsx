@@ -4,13 +4,12 @@ import Link from "next/link";
 import MenyuLanguage from "./_components/MenyuLanguage";
 
 export default function NavbarLayout() {
-  const email = "info" + "@" + "inventory.uz";
   return (
     <div>
       <header className="bg-background border-b border-border fixed w-full top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2" rel="noopener noreferrer">
+            <Link href="/" className="flex items-center space-x-2">
               <svg
                 width="75"
                 height="76"
@@ -50,16 +49,13 @@ export default function NavbarLayout() {
                 <a
                   href="tel:+998887790060"
                   className="flex items-center space-x-1 hover:text-foreground transition-colors"
-                  rel="noopener noreferrer"
                 >
                   <Phone className="w-4 h-4" />
                   <span>+998 (88) 779-00-60</span>
                 </a>
                 <a
-                  href=""
-                  onClick={() => (window.location.href = `mailto:${email}`)}
+                  href="mailto:&#105;&#110;&#102;&#111;&#064;&#105;&#110;&#118;&#101;&#110;&#116;&#111;&#114;&#121;&#046;&#117;&#122;"
                   className="flex items-center space-x-1 hover:text-foreground transition-colors"
-                  rel="noopener noreferrer"
                 >
                   <Mail className="w-4 h-4" />
                   <span>info@inventory.uz</span>

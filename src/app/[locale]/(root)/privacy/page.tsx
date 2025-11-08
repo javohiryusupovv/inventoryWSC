@@ -33,7 +33,7 @@ export default function PrivacyPage() {
                 <p>
                   Настоящая Политика конфиденциальности (далее — «Политика») регулирует порядок обработки и защиты
                   персональных данных пользователей сайта{" "}
-                  <a href="https://www.inventory.uz" className="text-primary underline" rel="noopener noreferrer">
+                  <a href="https://www.inventory.uz" className="text-primary underline">
                     https://www.inventory.uz
                   </a>{" "}
                   (далее — «Сайт»).

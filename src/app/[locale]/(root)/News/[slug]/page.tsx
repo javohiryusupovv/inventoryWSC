@@ -79,7 +79,7 @@ export default async function Page({ params }: ArticlePageParams) {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <div className="mb-8">
-            <Link href={`/${locale}/news`} rel="noopener noreferrer">
+            <Link href={`/${locale}/news`}>
               <Button
                 variant="ghost"
                 className="flex items-center space-x-2 bg-gray-200 hover:bg-gray-200/50"
@@ -131,7 +131,6 @@ export default async function Page({ params }: ArticlePageParams) {
                 src={article.image}
                 alt={article.title_en}
                 className="max-w-full h-96 object-cover rounded-lg"
-                loading="lazy"
                 width={900}
                 height={408}
                 priority

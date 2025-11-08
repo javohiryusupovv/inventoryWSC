@@ -46,9 +46,9 @@ export default function NotFound() {
       <div className="text-center px-6 max-w-2xl">
         {/* Animated OOPS text */}
         <div className="mb-8 animate-bounce">
-          <h1 className="text-9xl md:text-[180px] font-black text-orange-600 leading-none">
+          <h2 className="text-9xl md:text-[180px] font-black text-orange-600 leading-none">
             OOPS!
-          </h1>
+          </h2>
         </div>
 
         {/* 404 Error Code */}

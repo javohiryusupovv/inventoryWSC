@@ -9,7 +9,6 @@ export default function Contact() {
   const t = useTranslations("HomePage.contacts")
   const p = useTranslations("HomePage.contactInfo")
   const f = useTranslations("FooterPage.contact")
-  const email = "info" + "@" + "inventory.uz";
 
   return (
     <section id="contacts" className="py-20 bg-muted/30 overflow-hidden">
@@ -28,7 +27,7 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Phone */}
-              <a href="tel:+998887790060" className="mb-4" data-aos="fade-down" rel="noopener noreferrer">
+              <a href="tel:+998887790060" className="mb-4" data-aos="fade-down">
                 <Card className="group hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
@@ -45,7 +44,7 @@ export default function Contact() {
               </a>
 
               {/* Email */}
-              <a href="" onClick={() => (window.location.href = `mailto:${email}`)}  data-aos="fade-down" rel="noopener noreferrer">
+              <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#105;&#110;&#118;&#101;&#110;&#116;&#111;&#114;&#121;&#046;&#117;&#122;"  data-aos="fade-down">
                 <Card className="group hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-400/20 transition-colors">
@@ -151,7 +150,7 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4">
                   {p("urgentConsultation.desc")}
                 </p>
-                <Link href={"https://t.me/InventoryUz"} rel="noopener noreferrer">
+                <Link href={"https://t.me/InventoryUz"}>
                   <Button className="w-full h-[50px] bg-orange-400  hover:bg-orange-400/70 transition-all duration-200">{p("urgentConsultation.button")}</Button>
                 </Link>
               </CardContent>

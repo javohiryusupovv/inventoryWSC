@@ -28,7 +28,6 @@ export default function NewsHome() {
               key={item.id}
               className="bg-white rounded-lg shadow p-4 group cursor-pointer"
               data-aos="fade-up"
-              rel="noopener noreferrer"
             >
               <div className="w-full h-[200px] mb-4 rounded-md overflow-hidden">
                 <Image
@@ -36,7 +35,6 @@ export default function NewsHome() {
                   alt={item.title_en}
                   width={324}
                   height={200}
-                  loading="lazy"
                   className="transition-all duration-200 group-hover:scale-105 max-w-full h-full object-cover"
                   priority
                 />
@@ -73,7 +71,7 @@ export default function NewsHome() {
 
         {/* View All News Button */}
         <div className="text-center">
-          <Link href={`/${locale}/news`} rel="noopener noreferrer">
+          <Link href={`/${locale}/news`}>
             <Button
               size="lg"
               variant="outline"

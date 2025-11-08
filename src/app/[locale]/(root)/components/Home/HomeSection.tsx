@@ -69,7 +69,6 @@ export default function HomeSection() {
                                     src={HomeImg}
                                     alt="Professional warehouse inventory management"
                                     className="max-w-full h-[400px] lg:h-[500px] object-cover"
-                                    loading="lazy"
                                     width={600}
                                     height={400}
                                     priority

@@ -100,7 +100,7 @@ export default function WorkFlow() {
 
                 {/* Process Benefits */}
                 <div className="mt-16 bg-muted/50 rounded-2xl p-8">
-                    <h3 className="text-2xl font-bold text-foreground text-center mb-8">{s("approachAdvantages")}</h3>
+                    <h2 className="text-2xl font-bold text-foreground text-center mb-8">{s("approachAdvantages")}</h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="text-center" data-aos="zoom-in">
                             <div className="w-12 h-12 bg-orange-400/10 rounded-lg flex items-center justify-center mx-auto mb-4">
