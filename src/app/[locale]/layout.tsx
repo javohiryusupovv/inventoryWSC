@@ -198,7 +198,7 @@ export default async function RootLayout({
             <img
               src="https://mc.yandex.ru/watch/104589984"
               style={{ position: "absolute", left: "-9999px" }}
-              alt=""
+              alt="Yandex Metrika"
             />
           </div>
         </noscript>

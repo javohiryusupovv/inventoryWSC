@@ -36,7 +36,8 @@ export default function NewsHome() {
                   width={324}
                   height={200}
                   className="transition-all duration-200 group-hover:scale-105 max-w-full h-full object-cover"
-                  priority
+                  quality={75}
+                  priority={false}
                 />
               </div>
               <div className="text-sm text-gray-500 flex gap-4 mb-2">
